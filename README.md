@@ -19,7 +19,9 @@ be friendly to new users and easy to access the parking lot images and availabil
 <h2>For more information see the documentation bellow:</h2>
 
 <ul>
+  <li><a href="https://github.com/charlijj/VIU-Parking-Lot-Occupancy-Tracker/blob/main/documentation/TeamFormation.pdf" target="_blank">Team Formation</a>
   <li><a href="https://github.com/charlijj/VIU-Parking-Lot-Occupancy-Tracker/blob/main/documentation/ProjectPlan.pdf" target="_blank">Project Plan</a>
+  <li><a href="https://github.com/charlijj/VIU-Parking-Lot-Occupancy-Tracker/blob/main/documentation/Requirments.pdf" target="_blank">Requirements</a>
 </ul>
 
 
