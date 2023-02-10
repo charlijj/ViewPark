@@ -19,7 +19,7 @@ be friendly to new users and easy to access the parking lot images and availabil
 <h2>For more information see the documentation bellow:</h2>
 
 <ul>
-  <li><a href="VIU-Parking-Lot-Occupancy-Tracker/documentation/ProjectPlan.pdf">Project Plan</a>
+  <li><a href="[VIU-Parking-Lot-Occupancy-Tracker/documentation/ProjectPlan.pdf](https://github.com/charlijj/VIU-Parking-Lot-Occupancy-Tracker/blob/main/documentation/ProjectPlan.pdf)" target="_blank">Project Plan</a>
 </ul>
 
 
