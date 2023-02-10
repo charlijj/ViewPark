@@ -1,4 +1,4 @@
-# VIU-Parking-Lot-Occupancy-Tracker
+<h1 align="center">VIU-Parking-Lot-Occupancy-Tracker</h1>
 
 <h2>Product Summary</h2>
 
