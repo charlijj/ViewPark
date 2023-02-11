@@ -1,4 +1,5 @@
 <h1 align="center">VIU-Parking-Lot-Occupancy-Tracker</h1>
+<h3 align="center">(In Progress)</h3>
 
 <h2>Product Summary</h2>
 
