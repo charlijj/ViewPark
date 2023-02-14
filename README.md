@@ -1,4 +1,4 @@
-<h1 align="center">VIU-Parking-Lot-Occupancy-Tracker</h1>
+<h1 align="center">VIU Parking Lot-Occupancy Tracker</h1>
 <h3 align="center">(In Progress)</h3>
 
 <h2>Product Summary</h2>
@@ -16,6 +16,7 @@ their preferred parking lot availability across devices. If the user also enters
 on campus they will be shown what potential future lot availability looks like. The product will
 be friendly to new users and easy to access the parking lot images and availability desired.
 </p>
+<p>This project is for CSCI 375 Intro to Systems Analysis</p>
 
 <h2>For more information see the documentation bellow:</h2>
 
