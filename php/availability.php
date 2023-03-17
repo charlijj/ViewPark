@@ -27,4 +27,8 @@
         <p>Parking Lot 7</p>
         <p>Availability: some%</p>
     </div>
+    <div class="availability-container-item">
+        <p>Parking Lot 8</p>
+        <p>Availability: some%</p>
+    </div>
 </div>
