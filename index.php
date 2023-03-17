@@ -7,5 +7,9 @@
 ?>
 
 <?php
+    include_once("php/session.php");
+?>
+
+<?php
     include_once("php/tail.php");
 ?>
