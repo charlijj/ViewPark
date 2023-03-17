@@ -1,10 +1,30 @@
 <div class="availability-container">
-    <div class="availability-container-item">Parking Lot 1</div>
-    <div class="availability-container-item">Parking Lot 2</div>
-    <div class="availability-container-item">Parking Lot 3</div>
-    <div class="availability-container-item">Parking Lot 4</div>
-    <div class="availability-container-item">Parking Lot 5</div>
-    <div class="availability-container-item">Parking Lot 6</div>
-    <div class="availability-container-item">Parking Lot 7</div>
-    <div class="availability-container-item">Parking Lot 8</div>
+    <div class="availability-container-item">
+        <p>Parking Lot 1</p>
+        <p>Availability: some%</p>
+    </div>
+    <div class="availability-container-item">
+        <p>Parking Lot 2</p>
+        <p>Availability: some%</p>
+    </div>
+    <div class="availability-container-item">
+        <p>Parking Lot 3</p>
+        <p>Availability: some%</p>
+    </div>
+    <div class="availability-container-item">
+        <p>Parking Lot 4</p>
+        <p>Availability: some%</p>
+    </div>
+    <div class="availability-container-item">
+        <p>Parking Lot 5</p>
+        <p>Availability: some%</p>
+    </div>
+    <div class="availability-container-item">
+        <p>Parking Lot 6</p>
+        <p>Availability: some%</p>
+    </div>
+    <div class="availability-container-item">
+        <p>Parking Lot 7</p>
+        <p>Availability: some%</p>
+    </div>
 </div>
