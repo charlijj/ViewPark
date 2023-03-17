@@ -79,6 +79,11 @@ class SessionEntry(DataEntry):
 
 
 class Database:
+    """
+    Interface class to the sqlite3 database has forwarder functions
+    for the User, Lot, Availability, and Session objects within the 
+    database. Forwarders are for functions get_*, create_*, update_*
+    """
 
 
     def __init__(self, database):
