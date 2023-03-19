@@ -11,14 +11,14 @@
 <!-- Script to show login modal and block session info when user is not logged in -->
 <!-- Will probably be moved into its own file eventually -->
 <script>
-    LOGIN_STATUS = window.localStorage.getItem("LOGIN_STATUS");
+    const LOGIN_STATUS = window.localStorage.getItem("LOGIN_STATUS");
     const loginModal = document.getElementById("loginModal");
 
     if (LOGIN_STATUS == "0") // if user is not logged in display login modal
     {
         loginModal.innerHTML = `
             <?php
-                include_once("login-modal.php");
+                include("login-modal.php");
             ?>
         `;
     }
