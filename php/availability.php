@@ -66,7 +66,8 @@
                 `;
             }
             else {
-                availabilityModalContent.innerHTML = availabilityItem.id; // loginModal div becomes nothing when user logs in, showing what is in session-container
+                // This will be replace with another include for the forecast and other info
+                availabilityModalContent.innerHTML = availabilityItem.id;
             }
         })
     });

@@ -3,7 +3,7 @@
 
 <!-- Div to hold the session information-->
 <div class="session-container"> 
-    <h2>Current Session</h2>
+    <h2 style="margin: 0;">Current Session</h2>
     <p>session info</p>
     <div id="loginModal"></div>
 </div>

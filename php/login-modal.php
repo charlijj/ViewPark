@@ -10,6 +10,7 @@
                 <input type="password" name="password" id="password">
             </label>
             <input type="submit" id="submitButton">
+            <a href="php/createAccount.php">Create Account</a>
         </form>
     </div>  
 </div>
