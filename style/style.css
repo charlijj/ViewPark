@@ -6,6 +6,7 @@ body {
   background-image: url("img/repeated-square-dark.jpg");
   background-repeat: repeat;
   color: #fff;
+  font-size: 1rem;
 }
 
 .line {
@@ -35,6 +36,19 @@ footer {
   width: 100%;
   height: 150px;
   text-align: center;
-  font-size: small;
   border-top: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+footer a:hover {
+  color: #686868;
+}
+
+footer a:visited {
+  color: #fff;
 }
