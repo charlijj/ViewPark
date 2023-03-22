@@ -178,19 +178,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('06:45:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('06:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('06:40:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('06:05:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('06:20:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('06:50:00')), RANDOM()%21 + 00);
 -- 7-8am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('07:15:00')), RANDOM()%21 + 20);
@@ -204,19 +191,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('07:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('07:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('07:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('07:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('07:50:00')), RANDOM()%21 + 20);
 -- 8-9am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('08:15:00')), RANDOM()%21 + 40);
@@ -230,19 +204,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('08:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('08:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('08:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('08:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('08:50:00')), RANDOM()%21 + 40);
 -- 9-10am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('09:15:00')), RANDOM()%21 + 60);
@@ -256,19 +217,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('09:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('09:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('09:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('09:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('09:50:00')), RANDOM()%21 + 60);
 -- 10-11am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('10:15:00')), RANDOM()%21 + 80);
@@ -282,19 +230,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('10:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('10:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('10:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('10:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('10:50:00')), RANDOM()%21 + 80);
 -- 11am-12pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('11:15:00')), RANDOM()%21 + 80);
@@ -308,19 +243,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('11:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('11:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('11:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('11:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('11:50:00')), RANDOM()%21 + 80);
 -- 12-1pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('12:15:00')), RANDOM()%21 + 80);
@@ -334,19 +256,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('12:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('12:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('12:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('12:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('12:50:00')), RANDOM()%21 + 80);
 -- 1-2pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('13:15:00')), RANDOM()%21 + 80);
@@ -360,19 +269,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('13:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('13:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('13:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('13:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('13:50:00')), RANDOM()%21 + 80);
 -- 2-3pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('14:15:00')), RANDOM()%21 + 60);
@@ -386,19 +282,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('14:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('14:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('14:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('14:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('14:50:00')), RANDOM()%21 + 60);
 -- 3-4pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('15:15:00')), RANDOM()%21 + 40);
@@ -412,19 +295,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('15:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('15:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('15:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('15:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('15:50:00')), RANDOM()%21 + 40);
 -- 4-5pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('16:15:00')), RANDOM()%21 + 20);
@@ -438,19 +308,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('16:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('16:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('16:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('16:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('16:50:00')), RANDOM()%21 + 20);
 -- 5-6pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('17:15:00')), RANDOM()%21 + 00);
@@ -464,19 +321,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('17:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('17:45:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('17:35:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('17:25:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+0 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+0 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+0 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+0 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+0 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+0 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+0 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('17:50:00')), RANDOM()%21 + 00);
 
 /* TUESDAY */
 -- 6-7am
@@ -492,19 +336,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('06:45:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('06:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('06:40:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('06:05:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('06:20:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('06:50:00')), RANDOM()%21 + 00);
 -- 7-8am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('07:15:00')), RANDOM()%21 + 20);
@@ -518,19 +349,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('07:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('07:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('07:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('07:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('07:50:00')), RANDOM()%21 + 20);
 -- 8-9am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('08:15:00')), RANDOM()%21 + 40);
@@ -544,19 +362,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('08:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('08:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('08:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('08:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('08:50:00')), RANDOM()%21 + 40);
 -- 9-10am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('09:15:00')), RANDOM()%21 + 60);
@@ -570,19 +375,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('09:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('09:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('09:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('09:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('09:50:00')), RANDOM()%21 + 60);
 -- 10-11am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('10:15:00')), RANDOM()%21 + 80);
@@ -596,19 +388,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('10:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('10:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('10:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('10:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('10:50:00')), RANDOM()%21 + 80);
 -- 11am-12pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('11:15:00')), RANDOM()%21 + 80);
@@ -622,19 +401,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('11:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('11:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('11:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('11:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('11:50:00')), RANDOM()%21 + 80);
 -- 12-1pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('12:15:00')), RANDOM()%21 + 80);
@@ -648,19 +414,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('12:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('12:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('12:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('12:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('12:50:00')), RANDOM()%21 + 80);
 -- 1-2pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('13:15:00')), RANDOM()%21 + 80);
@@ -674,19 +427,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('13:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('13:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('13:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('13:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('13:50:00')), RANDOM()%21 + 80);
 -- 2-3pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('14:15:00')), RANDOM()%21 + 60);
@@ -700,19 +440,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('14:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('14:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('14:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('14:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('14:50:00')), RANDOM()%21 + 60);
 -- 3-4pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('15:15:00')), RANDOM()%21 + 40);
@@ -726,19 +453,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('15:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('15:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('15:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('15:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('15:50:00')), RANDOM()%21 + 40);
 -- 4-5pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('16:15:00')), RANDOM()%21 + 20);
@@ -752,19 +466,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('16:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('16:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('16:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('16:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('16:50:00')), RANDOM()%21 + 20);
 -- 5-6pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('17:15:00')), RANDOM()%21 + 00);
@@ -778,19 +479,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('17:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('17:45:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('17:35:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('17:25:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+1 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+1 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+1 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+1 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+1 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+1 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+1 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('17:50:00')), RANDOM()%21 + 00);
 
 /* WEDNESDAY */
 -- 6-7am
@@ -806,19 +494,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('06:45:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('06:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('06:40:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('06:05:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('06:20:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('06:50:00')), RANDOM()%21 + 00);
 -- 7-8am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('07:15:00')), RANDOM()%21 + 20);
@@ -832,19 +507,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('07:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('07:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('07:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('07:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('07:50:00')), RANDOM()%21 + 20);
 -- 8-9am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('08:15:00')), RANDOM()%21 + 40);
@@ -858,19 +520,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('08:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('08:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('08:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('08:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('08:50:00')), RANDOM()%21 + 40);
 -- 9-10am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('09:15:00')), RANDOM()%21 + 60);
@@ -884,19 +533,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('09:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('09:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('09:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('09:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('09:50:00')), RANDOM()%21 + 60);
 -- 10-11am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('10:15:00')), RANDOM()%21 + 80);
@@ -910,19 +546,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('10:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('10:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('10:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('10:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('10:50:00')), RANDOM()%21 + 80);
 -- 11am-12pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('11:15:00')), RANDOM()%21 + 80);
@@ -936,19 +559,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('11:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('11:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('11:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('11:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('11:50:00')), RANDOM()%21 + 80);
 -- 12-1pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('12:15:00')), RANDOM()%21 + 80);
@@ -962,19 +572,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('12:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('12:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('12:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('12:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('12:50:00')), RANDOM()%21 + 80);
 -- 1-2pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('13:15:00')), RANDOM()%21 + 80);
@@ -988,19 +585,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('13:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('13:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('13:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('13:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('13:50:00')), RANDOM()%21 + 80);
 -- 2-3pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('14:15:00')), RANDOM()%21 + 60);
@@ -1014,19 +598,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('14:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('14:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('14:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('14:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('14:50:00')), RANDOM()%21 + 60);
 -- 3-4pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('15:15:00')), RANDOM()%21 + 40);
@@ -1040,19 +611,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('15:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('15:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('15:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('15:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('15:50:00')), RANDOM()%21 + 40);
 -- 4-5pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('16:15:00')), RANDOM()%21 + 20);
@@ -1066,19 +624,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('16:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('16:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('16:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('16:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('16:50:00')), RANDOM()%21 + 20);
 -- 5-6pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('17:15:00')), RANDOM()%21 + 00);
@@ -1092,19 +637,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('17:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('17:45:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('17:35:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('17:25:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+2 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+2 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+2 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+2 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+2 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+2 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+2 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('17:50:00')), RANDOM()%21 + 00);
 
 /* THURSDAY */
 -- 6-7am
@@ -1120,19 +652,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('06:45:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('06:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('06:40:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('06:05:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('06:20:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('06:50:00')), RANDOM()%21 + 00);
 -- 7-8am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('07:15:00')), RANDOM()%21 + 20);
@@ -1146,19 +665,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('07:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('07:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('07:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('07:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('07:50:00')), RANDOM()%21 + 20);
 -- 8-9am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('08:15:00')), RANDOM()%21 + 40);
@@ -1172,19 +678,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('08:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('08:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('08:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('08:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('08:50:00')), RANDOM()%21 + 40);
 -- 9-10am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('09:15:00')), RANDOM()%21 + 60);
@@ -1198,19 +691,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('09:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('09:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('09:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('09:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('09:50:00')), RANDOM()%21 + 60);
 -- 10-11am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('10:15:00')), RANDOM()%21 + 80);
@@ -1224,19 +704,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('10:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('10:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('10:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('10:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('10:50:00')), RANDOM()%21 + 80);
 -- 11am-12pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('11:15:00')), RANDOM()%21 + 80);
@@ -1250,19 +717,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('11:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('11:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('11:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('11:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('11:50:00')), RANDOM()%21 + 80);
 -- 12-1pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('12:15:00')), RANDOM()%21 + 80);
@@ -1276,19 +730,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('12:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('12:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('12:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('12:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('12:50:00')), RANDOM()%21 + 80);
 -- 1-2pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('13:15:00')), RANDOM()%21 + 80);
@@ -1302,19 +743,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('13:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('13:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('13:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('13:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('13:50:00')), RANDOM()%21 + 80);
 -- 2-3pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('14:15:00')), RANDOM()%21 + 60);
@@ -1328,19 +756,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('14:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('14:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('14:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('14:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('14:50:00')), RANDOM()%21 + 60);
 -- 3-4pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('15:15:00')), RANDOM()%21 + 40);
@@ -1354,19 +769,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('15:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('15:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('15:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('15:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('15:50:00')), RANDOM()%21 + 40);
 -- 4-5pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('16:15:00')), RANDOM()%21 + 20);
@@ -1380,19 +782,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('16:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('16:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('16:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('16:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('16:50:00')), RANDOM()%21 + 20);
 -- 5-6pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('17:15:00')), RANDOM()%21 + 00);
@@ -1406,19 +795,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('17:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('17:45:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('17:35:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('17:25:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+3 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+3 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+3 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+3 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+3 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+3 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+3 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('17:50:00')), RANDOM()%21 + 00);
 
 /* FRIDAY */
 -- 6-7am
@@ -1434,19 +810,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('06:45:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('06:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('06:40:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('06:05:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('06:20:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('06:50:00')), RANDOM()%21 + 00);
 -- 7-8am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('07:15:00')), RANDOM()%21 + 20);
@@ -1460,19 +823,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('07:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('07:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('07:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('07:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('07:50:00')), RANDOM()%21 + 20);
 -- 8-9am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('08:15:00')), RANDOM()%21 + 40);
@@ -1486,19 +836,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('08:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('08:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('08:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('08:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('08:50:00')), RANDOM()%21 + 40);
 -- 9-10am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('09:15:00')), RANDOM()%21 + 60);
@@ -1512,19 +849,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('09:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('09:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('09:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('09:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('09:50:00')), RANDOM()%21 + 60);
 -- 10-11am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('10:15:00')), RANDOM()%21 + 80);
@@ -1538,19 +862,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('10:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('10:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('10:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('10:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('10:50:00')), RANDOM()%21 + 80);
 -- 11am-12pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('11:15:00')), RANDOM()%21 + 80);
@@ -1564,19 +875,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('11:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('11:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('11:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('11:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('11:50:00')), RANDOM()%21 + 80);
 -- 12-1pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('12:15:00')), RANDOM()%21 + 80);
@@ -1590,19 +888,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('12:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('12:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('12:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('12:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('12:50:00')), RANDOM()%21 + 80);
 -- 1-2pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('13:15:00')), RANDOM()%21 + 80);
@@ -1616,19 +901,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('13:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('13:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('13:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('13:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('13:50:00')), RANDOM()%21 + 80);
 -- 2-3pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('14:15:00')), RANDOM()%21 + 60);
@@ -1642,19 +914,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('14:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('14:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('14:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('14:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('14:50:00')), RANDOM()%21 + 60);
 -- 3-4pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('15:15:00')), RANDOM()%21 + 40);
@@ -1668,19 +927,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('15:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('15:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('15:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('15:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('15:50:00')), RANDOM()%21 + 40);
 -- 4-5pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('16:15:00')), RANDOM()%21 + 20);
@@ -1694,19 +940,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('16:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('16:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('16:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('16:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('16:50:00')), RANDOM()%21 + 20);
 -- 5-6pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('17:15:00')), RANDOM()%21 + 00);
@@ -1720,19 +953,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('17:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('17:45:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('17:35:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('17:25:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+4 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+4 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+4 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+4 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+4 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+4 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+4 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('17:50:00')), RANDOM()%21 + 00);
 
 /* SATURDAY */
 -- 6-7am
@@ -1748,19 +968,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('06:45:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('06:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('06:40:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('06:05:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('06:20:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('06:50:00')), RANDOM()%21 + 00);
 -- 7-8am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('07:15:00')), RANDOM()%21 + 20);
@@ -1774,19 +981,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('07:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('07:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('07:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('07:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('07:50:00')), RANDOM()%21 + 20);
 -- 8-9am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('08:15:00')), RANDOM()%21 + 40);
@@ -1800,19 +994,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('08:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('08:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('08:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('08:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('08:50:00')), RANDOM()%21 + 40);
 -- 9-10am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('09:15:00')), RANDOM()%21 + 60);
@@ -1826,19 +1007,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('09:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('09:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('09:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('09:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('09:50:00')), RANDOM()%21 + 60);
 -- 10-11am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('10:15:00')), RANDOM()%21 + 80);
@@ -1852,19 +1020,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('10:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('10:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('10:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('10:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('10:50:00')), RANDOM()%21 + 80);
 -- 11am-12pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('11:15:00')), RANDOM()%21 + 80);
@@ -1878,19 +1033,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('11:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('11:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('11:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('11:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('11:50:00')), RANDOM()%21 + 80);
 -- 12-1pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('12:15:00')), RANDOM()%21 + 80);
@@ -1904,19 +1046,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('12:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('12:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('12:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('12:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('12:50:00')), RANDOM()%21 + 80);
 -- 1-2pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('13:15:00')), RANDOM()%21 + 80);
@@ -1930,19 +1059,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('13:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('13:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('13:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('13:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('13:50:00')), RANDOM()%21 + 80);
 -- 2-3pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('14:15:00')), RANDOM()%21 + 60);
@@ -1956,19 +1072,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('14:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('14:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('14:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('14:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('14:50:00')), RANDOM()%21 + 60);
 -- 3-4pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('15:15:00')), RANDOM()%21 + 40);
@@ -1982,19 +1085,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('15:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('15:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('15:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('15:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('15:50:00')), RANDOM()%21 + 40);
 -- 4-5pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('16:15:00')), RANDOM()%21 + 20);
@@ -2008,19 +1098,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('16:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('16:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('16:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('16:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('16:50:00')), RANDOM()%21 + 20);
 -- 5-6pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('17:15:00')), RANDOM()%21 + 00);
@@ -2034,19 +1111,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('17:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('17:45:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('17:35:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('17:25:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+5 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+5 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+5 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+5 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+5 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+5 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+5 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('17:50:00')), RANDOM()%21 + 00);
 
 /* SUNDAY */
 -- 6-7am
@@ -2062,19 +1126,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('06:45:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('06:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('06:40:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('06:05:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('06:20:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('06:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('06:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('06:50:00')), RANDOM()%21 + 00);
 -- 7-8am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('07:15:00')), RANDOM()%21 + 20);
@@ -2088,19 +1139,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('07:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('07:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('07:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('07:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('07:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('07:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('07:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('07:50:00')), RANDOM()%21 + 20);
 -- 8-9am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('08:15:00')), RANDOM()%21 + 40);
@@ -2114,19 +1152,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('08:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('08:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('08:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('08:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('08:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('08:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('08:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('08:50:00')), RANDOM()%21 + 40);
 -- 9-10am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('09:15:00')), RANDOM()%21 + 60);
@@ -2140,19 +1165,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('09:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('09:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('09:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('09:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('09:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('09:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('09:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('09:50:00')), RANDOM()%21 + 60);
 -- 10-11am
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('10:15:00')), RANDOM()%21 + 80);
@@ -2166,19 +1178,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('10:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('10:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('10:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('10:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('10:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('10:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('10:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('10:50:00')), RANDOM()%21 + 80);
 -- 11am-12pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('11:15:00')), RANDOM()%21 + 80);
@@ -2192,19 +1191,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('11:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('11:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('11:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('11:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('11:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('11:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('11:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('11:50:00')), RANDOM()%21 + 80);
 -- 12-1pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('12:15:00')), RANDOM()%21 + 80);
@@ -2218,19 +1204,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('12:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('12:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('12:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('12:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('12:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('12:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('12:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('12:50:00')), RANDOM()%21 + 80);
 -- 1-2pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('13:15:00')), RANDOM()%21 + 80);
@@ -2244,19 +1217,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('13:30:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('13:15:00')), RANDOM()%21 + 80);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('13:45:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('13:35:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('13:25:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('13:50:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('13:55:00')), RANDOM()%21 + 80);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('13:50:00')), RANDOM()%21 + 80);
 -- 2-3pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('14:15:00')), RANDOM()%21 + 60);
@@ -2270,19 +1230,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('14:30:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('14:15:00')), RANDOM()%21 + 60);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('14:45:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('14:35:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('14:25:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('14:50:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('14:55:00')), RANDOM()%21 + 60);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('14:50:00')), RANDOM()%21 + 60);
 -- 3-4pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('15:15:00')), RANDOM()%21 + 40);
@@ -2296,19 +1243,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('15:30:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('15:15:00')), RANDOM()%21 + 40);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('15:45:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('15:35:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('15:25:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('15:50:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('15:55:00')), RANDOM()%21 + 40);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('15:50:00')), RANDOM()%21 + 40);
 -- 4-5pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('16:15:00')), RANDOM()%21 + 20);
@@ -2322,19 +1256,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('16:30:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('16:15:00')), RANDOM()%21 + 20);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('16:45:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('16:35:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('16:25:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('16:50:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('16:55:00')), RANDOM()%21 + 20);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('16:50:00')), RANDOM()%21 + 20);
 -- 5-6pm
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('17:15:00')), RANDOM()%21 + 00);
@@ -2348,19 +1269,6 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('17:30:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('17:15:00')), RANDOM()%21 + 00);
 INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('17:45:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('17:35:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('17:25:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-06', '+6 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-13', '+6 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-20', '+6 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-02-27', '+6 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-06', '+6 day') || TIME('17:50:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-13', '+6 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-03-20', '+6 day') || TIME('17:55:00')), RANDOM()%21 + 00);
-INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('17:50:00')), RANDOM()%21 + 00);
 /* END LOT A */
 
 /* LOT B (lotId = 2) */
