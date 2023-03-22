@@ -138,11 +138,13 @@ INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('
     -   date stored as Unix Epoch time format, as time (seconds) elapsed since January 1, 1970, 00:00:00 UTC. 
         It can be converted to a formatted datetime string with a query like
         SELECT strftime('%Y-%m-%d %H:%M:%S', date) AS formattedDate FROM user;
-    -   Test dates only begin on January 01, 2023, and end on March 20, 2023. Additionally, the times exist only between 6am-6pm.
+    -   Test dates only begin on January 02, 2023, and end on March 20, 2023. Additionally, the times exist only between 6am-6pm.
         So, data exists for every day between Jan 01, 2023 - Mar 20, 2023, at times betwen 6am-6pm.
         The times are separated by day of week and by time to simulate what the availability might actually be like for that given day and time.
-        Each time slot (ie. Mondays between 6-7am) has 25 availability records. Additionally, the fullness is randomized between 
-        certain values that would be probable for that time of day, with 20% jumps in percentage (ie 6-7am 0-20% full, while 10-11am 80-100% full).
+        Each time slot (ie. Mondays between 6-7am) has 12 availability records, one record per week for that
+        day, between January 02, 2023 and March 20, 2023.
+        Additionally, the fullness is randomized between certain values that would be probable for that time of day, 
+        with 20% jumps in percentage (ie 6-7am approx 0-20% full, while 10-11am approx 80-100% full).
 */
 
 /*
