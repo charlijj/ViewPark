@@ -9,3 +9,4 @@ class ParkingSpot:
         self.yPos = yPos
         self.spotWidth = spotWidth
         self.spotHeight = spotHeight
+        
