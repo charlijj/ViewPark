@@ -51,6 +51,79 @@ INSERT INTO lot (lotName, lotType, fullness, location) VALUES ('Lot E', 2, 0, "L
 /* End LOT */ 
 
 
+/* INSERT: SESSION DATA
+	sessionId			INTEGER
+	lotId				INTEGER
+	userId				INTEGER
+	startTime			INTEGER NOT NULL
+	endTime				INTEGER NOT NULL
+
+    FOREIGN KEY (lotId) REFERENCES lot(lotId)
+	FOREIGN KEY (userId) REFERENCES user(userId)
+	PRIMARY KEY (sessionId)
+
+    Notes
+    -   sessionId is auto-incremented in SQLite, and does not need to be included in the insert statements. 
+    -   lotId must be present in the lot table for an availability record to be inserted with it. (Foreign key dependency).
+    -   userId must be present in the lot table for an availability record to be inserted with it. (Foreign key dependency).
+    -   fullness is being stored as a value between 0 and 100, representing the percentage full that a lot is.
+    -   startTime and endTime stored as Unix Epoch time format, as time (seconds) elapsed since January 1, 1970, 00:00:00 UTC. 
+        It can be converted to a formatted datetime string with a query like
+        SELECT strftime('%Y-%m-%d %H:%M:%S', startTime) AS formattedDate FROM user;
+*/
+
+/* MONDAY */
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+0 day') || TIME('13:00:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+0 day') || TIME('11:30:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+0 day') || TIME('09:45:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+0 day') || TIME('11:15:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+0 day') || TIME('15:30:00')));
+
+/* TUESDAY */
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+1 day') || TIME('13:00:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+1 day') || TIME('11:30:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+1 day') || TIME('09:45:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+1 day') || TIME('11:15:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+1 day') || TIME('15:30:00')));
+
+/* WEDNESDAY */
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+2 day') || TIME('13:00:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+2 day') || TIME('11:30:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+2 day') || TIME('09:45:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+2 day') || TIME('11:15:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+2 day') || TIME('15:30:00')));
+
+/* THURSDAY */
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+3 day') || TIME('13:00:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+3 day') || TIME('11:30:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+3 day') || TIME('09:45:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+3 day') || TIME('11:15:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+3 day') || TIME('15:30:00')));
+
+/* FRIDAY */
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+4 day') || TIME('13:00:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+4 day') || TIME('11:30:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+4 day') || TIME('09:45:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+4 day') || TIME('11:15:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+4 day') || TIME('15:30:00')));
+
+/* SATURDAY */
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+5 day') || TIME('13:00:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+5 day') || TIME('11:30:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+5 day') || TIME('09:45:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+5 day') || TIME('11:15:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+5 day') || TIME('15:30:00')));
+
+/* SUNDAY */
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+6 day') || TIME('13:00:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+6 day') || TIME('11:30:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+6 day') || TIME('09:45:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+6 day') || TIME('11:15:00')));
+INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+6 day') || TIME('15:30:00')));
+
+/* End SESSION */
+
+
 /* INSERT: AVAILABILITY DATA
 	lotId				INTEGER
 	date				INTEGER NOT NULL
@@ -2667,76 +2740,3 @@ INSERT INTO availability (lotId, date, fullness) VALUES (1, strftime('%s', DATE(
 /* END LOT E */
 
 /* End AVAILABILITY */
-
-
-/* INSERT: SESSION DATA
-	sessionId			INTEGER
-	lotId				INTEGER
-	userId				INTEGER
-	startTime			INTEGER NOT NULL
-	endTime				INTEGER NOT NULL
-
-    FOREIGN KEY (lotId) REFERENCES lot(lotId)
-	FOREIGN KEY (userId) REFERENCES user(userId)
-	PRIMARY KEY (sessionId)
-
-    Notes
-    -   sessionId is auto-incremented in SQLite, and does not need to be included in the insert statements. 
-    -   lotId must be present in the lot table for an availability record to be inserted with it. (Foreign key dependency).
-    -   userId must be present in the lot table for an availability record to be inserted with it. (Foreign key dependency).
-    -   fullness is being stored as a value between 0 and 100, representing the percentage full that a lot is.
-    -   startTime and endTime stored as Unix Epoch time format, as time (seconds) elapsed since January 1, 1970, 00:00:00 UTC. 
-        It can be converted to a formatted datetime string with a query like
-        SELECT strftime('%Y-%m-%d %H:%M:%S', startTime) AS formattedDate FROM user;
-*/
-
-/* MONDAY */
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+0 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+0 day') || TIME('13:00:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+0 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+0 day') || TIME('11:30:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+0 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+0 day') || TIME('09:45:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+0 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+0 day') || TIME('11:15:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+0 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+0 day') || TIME('15:30:00')));
-
-/* TUESDAY */
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+1 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+1 day') || TIME('13:00:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+1 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+1 day') || TIME('11:30:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+1 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+1 day') || TIME('09:45:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+1 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+1 day') || TIME('11:15:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+1 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+1 day') || TIME('15:30:00')));
-
-/* WEDNESDAY */
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+2 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+2 day') || TIME('13:00:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+2 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+2 day') || TIME('11:30:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+2 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+2 day') || TIME('09:45:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+2 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+2 day') || TIME('11:15:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+2 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+2 day') || TIME('15:30:00')));
-
-/* THURSDAY */
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+3 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+3 day') || TIME('13:00:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+3 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+3 day') || TIME('11:30:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+3 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+3 day') || TIME('09:45:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+3 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+3 day') || TIME('11:15:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+3 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+3 day') || TIME('15:30:00')));
-
-/* FRIDAY */
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+4 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+4 day') || TIME('13:00:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+4 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+4 day') || TIME('11:30:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+4 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+4 day') || TIME('09:45:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+4 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+4 day') || TIME('11:15:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+4 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+4 day') || TIME('15:30:00')));
-
-/* SATURDAY */
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+5 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+5 day') || TIME('13:00:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+5 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+5 day') || TIME('11:30:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+5 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+5 day') || TIME('09:45:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+5 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+5 day') || TIME('11:15:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+5 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+5 day') || TIME('15:30:00')));
-
-/* SUNDAY */
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 1, strftime('%s', DATE('2023-01-02', '+6 day') || TIME('12:00:00')), strftime('%s', DATE('2023-01-02', '+6 day') || TIME('13:00:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 6, strftime('%s', DATE('2023-01-09', '+6 day') || TIME('10:30:00')), strftime('%s', DATE('2023-01-09', '+6 day') || TIME('11:30:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 2, strftime('%s', DATE('2023-01-16', '+6 day') || TIME('08:45:00')), strftime('%s', DATE('2023-01-16', '+6 day') || TIME('09:45:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 3, strftime('%s', DATE('2023-01-23', '+6 day') || TIME('10:15:00')), strftime('%s', DATE('2023-01-23', '+6 day') || TIME('11:15:00')));
-INSERT INTO session (lotId, userId, startTime, endTime) VALUES (1, 8, strftime('%s', DATE('2023-01-30', '+6 day') || TIME('14:30:00')), strftime('%s', DATE('2023-01-30', '+6 day') || TIME('15:30:00')));
-
-/* End SESSION */
