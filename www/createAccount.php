@@ -54,5 +54,5 @@
 </div>
 
 <?php
-    include_once("tail.php");
+    include_once("include/tail.php");
 ?>
