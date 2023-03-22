@@ -37,4 +37,5 @@ class Availability:
                 numFullSpots += 1
         
         lotFullness = round(numFullSpots / len(self.parkingSpotList) * 100, 2) # display fullness metric as a percentage of capacity
-        print(lotFullness, 'Percent Full')
+        return lotFullness # not sure if we should return this or stick it in the database at this point or what..
+    
