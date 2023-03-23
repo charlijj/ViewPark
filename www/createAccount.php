@@ -1,7 +1,29 @@
 <?php
 
+	include_once 'include/database.php';
+
     // Enter form code here
-    
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+		$type 	= $_POST['user-type'];
+		$email 	= $_POST['email'];	
+		$name	= $_POST['username'];
+		$pass	= $_POST['password'];
+		$repass	= $_POST['re_password'];
+		
+		$db = new Database;
+
+		$hint = new UserEntry;
+		$hint->email = $email;
+		$query = $db->get_users($hint);
+
+		if(count($query[1]) > 0){
+			echo "Account already exists!";
+		
+		}else{
+			echo "New account made";
+		}
+	}
 ?>
 
 <!DOCTYPE html>
@@ -13,8 +35,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/create_account_style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/create_account_style.css">
     <title>View Park</title>
 </head>
 <body>

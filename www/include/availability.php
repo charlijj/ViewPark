@@ -1,36 +1,24 @@
 <div class="availability-container">
-    <div class="availability-container-item" id="lot1">
-        <p>Parking Lot 1</p>
-        <p>Availability: some%</p>
-    </div>
-    <div class="availability-container-item" id="lot2">
-        <p>Parking Lot 2</p>
-        <p>Availability: some%</p>
-    </div>
-    <div class="availability-container-item" id="lot3">
-        <p>Parking Lot 3</p>
-        <p>Availability: some%</p>
-    </div>
-    <div class="availability-container-item" id="lot4">
-        <p>Parking Lot 4</p>
-        <p>Availability: some%</p>
-    </div>
-    <div class="availability-container-item" id="lot5">
-        <p>Parking Lot 5</p>
-        <p>Availability: some%</p>
-    </div>
-    <div class="availability-container-item" id="lot6">
-        <p>Parking Lot 6</p>
-        <p>Availability: some%</p>
-    </div>
-    <div class="availability-container-item" id="lot7">
-        <p>Parking Lot 7</p>
-        <p>Availability: some%</p>
-    </div>
-    <div class="availability-container-item" id="lot8">
-        <p>Parking Lot 8</p>
-        <p>Availability: some%</p>
-    </div>
+	
+	<?php
+		include_once 'database.php';		
+
+		$db = new Database;
+
+		$query = $db->get_lots();
+
+		foreach($query[1] as $lot ){
+			echo "
+			<div class='availability-container-item' id='lot$lot->lotId'>
+				<p>$lot->lotName</p>
+				<p>$lot->location</p>
+				<p>$lot->fullness% full</p>
+			</div>
+			";
+		}
+
+	?>
+	
 </div>
 
 <div class="availability-modal-container" id="availabilityModal">

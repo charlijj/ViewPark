@@ -11,7 +11,7 @@
             // set LOGIN_STATUS to true and reload page, makes the login modals disappear 
             echo "<script>
                 window.localStorage.setItem(\"LOGIN_STATUS\", \"1\"); 
-                window.location = \"../index.php\";
+                window.location = \"index.php\";
                 </script>
             ";
         }
