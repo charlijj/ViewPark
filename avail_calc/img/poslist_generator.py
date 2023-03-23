@@ -62,10 +62,10 @@ def checkParkingSpace():
 
         count = cv.countNonZero(imgCrop) # count number of pixels in selected spot
 
-        cvzone.putTextRect(parkingLot, str(count), (x, y+h-10), scale = 1, thickness=1, offset=0) # display pixel count
+        # cvzone.putTextRect(parkingLot, str(count), (x, y+h-10), scale = 1, thickness=1, offset=0) # display pixel count
 
         if count > (countCoefficient * spotWidth * spotHeight): # if parking spot is occupied
-            cvzone.putTextRect(parkingLot, 'FULL', (x+w+6, y+h), scale = 1, thickness=1, offset=0) # display FULL status
+            # cvzone.putTextRect(parkingLot, 'FULL', (x+w+6, y+h), scale = 1, thickness=1, offset=0) # display FULL status
             numFullSpots += 1 
 
         availability = round(numFullSpots / len(posList) * 100, 2)
