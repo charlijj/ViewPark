@@ -189,14 +189,14 @@ class Database{
         $query = 'SELECT * FROM ' . $query;
         $conditions = '';
 
-        foreach($args as $arg){
+        foreach($args as $key => $value){
 
             if ($conditions == '')
-                $conditions = ' WHERE ' . $arg . '=:' . $arg;
+                $conditions = ' WHERE ' . $key . '=:' . $key;
             else
-                $conditions .= ' AND ' . $arg . '=:' . $arg;
+                $conditions .= ' AND ' . $key . '=:' . $key;
 		}
-
+		
         return $query . $conditions;
 	}
 
