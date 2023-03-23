@@ -55,11 +55,11 @@
             }
             else {
                 // This will be replace with another include for the forecast and other info
-                availabilityModalContent.innerHTML =                    
+                availabilityModalContent.innerHTML = `                   
                     <?php
                         include("forecast.php");
                     ?>
-                ;
+                `;
             }
         })
     });
