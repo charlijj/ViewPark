@@ -9,8 +9,7 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js">
     const ctx = document.getElementById('forecast-graph');
 
     new Chart(ctx, {
