@@ -3,8 +3,13 @@
 
 ?>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div class="forecast-container">
+    <div class="forecast-graph-container">
+        <canvas id="forecast-graph"></canvas>
+    </div>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     const ctx = document.getElementById('forecast-graph');
 
@@ -28,8 +33,8 @@
     });
 </script>
 
-<div class="forecast-container">
-    <div class="forecast-graph-container">
-        <canvas id="forecast-graph"></canvas>
-    </div>
-</div>
+<script>
+    // window.localStorage.getItem('lotId');
+
+</script>
+
