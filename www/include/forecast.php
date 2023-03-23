@@ -4,7 +4,7 @@
 ?>
 
 <div class="forecast-container">
-    <div>
-    Forecast
+    <div class="forecast-graph">
+        <p>Forecast<p>
     </div>
 </div>

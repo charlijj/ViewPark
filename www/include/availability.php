@@ -57,7 +57,7 @@
                 // This will be replace with another include for the forecast and other info
                 availabilityModalContent.innerHTML =                    
                     <?php
-                        include("../forecast.php");
+                        include("forecast.php");
                     ?>
                 ;
             }
