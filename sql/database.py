@@ -153,6 +153,7 @@ class Database:
 
         self.run_script('drop_tables.sql')
         self.run_script('create_tables.sql')
+        self.run_script('data.sql')
 
 
     def generate_select_query(self, query, args):
