@@ -17,6 +17,9 @@ class Availability:
         self.parkingSpotList = parkingSpotList
         self.imagePath = imagePath
         
+        # coefficient to multiply with the dimensions of a parking spot when counting non-zero pixels from threshold image
+        self.countCoefficient = 0.25 # (apparently 25% is the magic number)
+        
     def calcFullness(self):
         
         # read the image file, convert it to grayscale, then convert grayscale image to threshold image
@@ -33,7 +36,7 @@ class Availability:
             
             count = cv.countNonZero(imageCrop) # count number of pixels in cropped spot image
             
-            if count > 130: # if more than 130 pixels are counted, spot is occupied
+            if count > (self.countCoefficient * spot.spotWidth * spot.spotHeight): # if a certain percent of the total pixels in the spot are non-zero, spot is likely occupied
                 numFullSpots += 1
         
         lotFullness = round(numFullSpots / len(self.parkingSpotList) * 100, 2) # display fullness metric as a percentage of capacity
