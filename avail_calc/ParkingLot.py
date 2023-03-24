@@ -6,14 +6,18 @@
 import pickle
 from ParkingSpot import ParkingSpot
 from Availability import Availability
-from sql.database import AvailabilityEntry
-from time import time
+import sys
+import time
+
+sys.path.append('../')
+from sql.database import AvailabilityEntry, LotEntry
+
 
 class ParkingLot:
     
     # note: posListFilename is a pickled list of parking lot positions, constructor unpacks the list,
     # and instantiates a new parking spot object for each position.
-    def __init__(self, lotEntry, posListFileName, parkingLotImage): 
+    def __init__(self, lotEntry: LotEntry, posListFileName: str, parkingLotImage: str) -> AvailabilityEntry: 
         
         self.lotEntry = lotEntry
         self.parkingLotImage = parkingLotImage # filename/path of parking lot image (string)
