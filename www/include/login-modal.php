@@ -9,7 +9,7 @@
             <label for="username">Password: 
                 <input type="password" name="password" id="password">
             </label>
-            <input type="submit" id="submitButton">
+            <input type="submit" id="submitButton" value="Log In">
             <a href="createAccount.php">Create Account</a>
         </form>
     </div>  
