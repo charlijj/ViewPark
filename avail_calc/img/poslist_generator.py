@@ -2,6 +2,7 @@ import pickle
 import cv2 as cv
 import cvzone
 import sys
+import pathlib
 
 # This program will generate position lists for the locations of parking spots in a lot.
 # Must pass the folder name that contains both the images and dimensions file as an argument.
@@ -9,10 +10,10 @@ import sys
 
 # if no args, exit
 if (len(sys.argv) < 2):
-    print('Must specify folder name. eg: trades_upper')
+    print('must specify path to image. eg: lotA/lotA1.jpg')
     exit(1)
 
-imageFile = (sys.argv[1] + '/' + sys.argv[1] + '1.jpg') # create filename string based off user argument
+imageFile = (sys.argv[1]) # create filename string based off user argument
 
 # try to open the file
 try:
@@ -23,9 +24,9 @@ except:
     
 # try to open and read spot_dimensions file
 try:
-    spotDimensions = open((sys.argv[1]) + '/spot_dimensions.txt', 'r')
+    spotDimensions = open((str(pathlib.Path(imageFile).parent) + '/spot_dimensions.txt'), 'r')
 except:
-    print('Could not read file ' + sys.argv[1] + '/spot_dimensions.txt')
+    print('Could not read file' + str(pathlib.Path(imageFile).parent) + '/spot_dimensions.txt')
     exit(1)
     
 # read first two lines of dimensions file as spot width and height respectively
@@ -40,7 +41,7 @@ cvGrayImage = cv.cvtColor(cvImage, cv.COLOR_BGR2GRAY) # covert image to grayscal
 cvThresholdImage = cv.adaptiveThreshold(cvGrayImage, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY_INV, 25, 15) # convert image to threshold
 
 try:
-    with open((sys.argv[1] + '/' + sys.argv[1] + '_posList'), 'rb') as file: # try to open position list file from previous session 
+    with open((str(pathlib.Path(imageFile).parent) + '/posList'), 'rb') as file: # try to open position list file from previous session 
 
         posList = pickle.load(file) # fill position list with previously selected spots
 except:
@@ -89,7 +90,7 @@ def mouseClick (event, x, y, flage, params):
                 posList.pop(i)
 
         
-    with open((sys.argv[1] + '/' + sys.argv[1] + '_posList'), 'wb') as file: # add updated position list to posList record file
+    with open((str(pathlib.Path(imageFile).parent) + '/posList'), 'wb') as file: # add updated position list to posList record file
 
         pickle.dump(posList, file)
 
