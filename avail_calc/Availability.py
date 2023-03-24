@@ -39,6 +39,6 @@ class Availability:
             if count > (self.countCoefficient * spot.spotWidth * spot.spotHeight): # if a certain percent of the total pixels in the spot are non-zero, spot is likely occupied
                 numFullSpots += 1
         
-        lotFullness = round(numFullSpots / len(self.parkingSpotList) * 100, 2) # display fullness metric as a percentage of capacity
+        lotFullness = round(numFullSpots / len(self.parkingSpotList) * 100) # display fullness metric as a percentage of capacity
         return lotFullness # not sure if we should return this or stick it in the database at this point or what..
     
