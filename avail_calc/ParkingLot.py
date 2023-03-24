@@ -6,16 +6,16 @@
 import pickle
 from ParkingSpot import ParkingSpot
 from Availability import Availability
+from sql.database import AvailabilityEntry
+from time import time
 
 class ParkingLot:
     
     # note: posListFilename is a pickled list of parking lot positions, constructor unpacks the list,
     # and instantiates a new parking spot object for each position.
-    def __init__(self, lotID, lotName, lotType, posListFileName, parkingLotImage): 
+    def __init__(self, lotEntry, posListFileName, parkingLotImage): 
         
-        self.lotID = lotID # (int)
-        self.lotName = lotName # (string)
-        self.lotType = lotType # general/staff (0/1)
+        self.lotEntry = lotEntry
         self.parkingLotImage = parkingLotImage # filename/path of parking lot image (string)
         self.parkingSpotList = [] # empty list for parking spot objects
         
@@ -32,6 +32,12 @@ class ParkingLot:
             
     def updateFullness(self):
 
-        lotAvailability = Availability(self.parkingSpotList, self.parkingLotImage).calcFullness() # instantiate new Availability object and run the calcFullness method
-        return lotAvailability # not sure if i should return this or stick in the database now or what...
+        availability = Availability(self.parkingSpotList, self.parkingLotImage) # instantiate new Availability object and run the calcFullness method
+        fullness = availability.calcFullness()
+        
+        return AvailabilityEntry(
+            self.lotEntry.lotId,
+            int(time.time()), # current epoch
+            fullness
+        )
     
