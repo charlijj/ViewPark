@@ -12,6 +12,9 @@
     <title>View Park</title>
 </head>
 <body>
+<!-- chart.js library for forecast charts -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="forecast.js"></script>
 <script>
     if (!window.localStorage.getItem("LOGIN_STATUS")) // if it is the first time for the user logging in, LOGIN_STATUS is null 
     {

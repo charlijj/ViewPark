@@ -4,9 +4,9 @@
 ?>
 
 <div class="forecast-container">
+    Forecast Graph
     <div class="forecast-graph-container">
-        <!-- <canvas id="forecast-graph"></canvas> -->
-        Forecast Graph
+        <canvas id="forecast-graph"></canvas>
     </div>
 </div>
 
