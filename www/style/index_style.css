@@ -161,5 +161,23 @@
 .login-modal-content #submitButton:hover {
   background-color: #313131;
 }
-
 /* ---------------------------------------------------------------------------------------- */
+/* Logout button  ------------------------------------------------------------------------- */
+
+.logout-button {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  background-color: #640000;
+  transition: background-color ease 0.2s;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #920000;
+}

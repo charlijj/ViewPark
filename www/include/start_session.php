@@ -1,4 +1,8 @@
 <?php
+
+    // Clear all session globals from previous sessions
+    session_unset();
+
     // Set session cookie parameters
     session_set_cookie_params([
         'lifetime' => 0,    // Set the cookie lifetime to 0, which means it will expire when the browser is closed.

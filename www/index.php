@@ -7,6 +7,10 @@
 ?>
 
 <?php
+    include_once("include/logout.php");
+?>
+
+<?php
     include_once("include/availability.php");
 ?>
 

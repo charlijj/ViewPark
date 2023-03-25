@@ -52,7 +52,7 @@
     {
         loginModal.innerHTML = `
             <?php
-                include("login-modal.php");
+                include("login_modal.php");
             ?>
         `;
     }
