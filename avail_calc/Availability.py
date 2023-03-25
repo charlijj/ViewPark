@@ -1,4 +1,6 @@
 import cv2 as cv
+from typing import List
+from ParkingSpot import ParkingSpot
 
 # Availability Class
 
@@ -13,7 +15,8 @@ import cv2 as cv
 class Availability:
     
     # initialize with a list of parking spots, and the path/filename of an image
-    def __init__(self, parkingSpotList, imagePath):
+    def __init__(self, parkingSpotList: List[ParkingSpot], imagePath: str) -> int:
+        
         self.parkingSpotList = parkingSpotList
         self.imagePath = imagePath
         
@@ -21,6 +24,9 @@ class Availability:
         self.countCoefficient = 0.25 # (apparently 25% is the magic number)
         
     def calcFullness(self):
+        
+        if (len(self.parkingSpotList) == 0):
+            return None
         
         # read the image file, convert it to grayscale, then convert grayscale image to threshold image
         parkingLotImage = cv.imread(self.imagePath)
@@ -39,6 +45,6 @@ class Availability:
             if count > (self.countCoefficient * spot.spotWidth * spot.spotHeight): # if a certain percent of the total pixels in the spot are non-zero, spot is likely occupied
                 numFullSpots += 1
         
-        lotFullness = round(numFullSpots / len(self.parkingSpotList) * 100, 2) # display fullness metric as a percentage of capacity
+        lotFullness = round(numFullSpots / len(self.parkingSpotList) * 100) # display fullness metric as a percentage of capacity
         return lotFullness # not sure if we should return this or stick it in the database at this point or what..
     
