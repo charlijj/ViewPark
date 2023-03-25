@@ -5,7 +5,7 @@
 
 <div class="forecast-container">
     Forecast Graph
-    <div class="forecast-graph-container">
+    <div>
         <canvas id="forecast-graph"></canvas>
     </div>
 </div>
