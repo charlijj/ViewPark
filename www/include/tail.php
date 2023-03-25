@@ -4,6 +4,6 @@
     </footer>
     <!-- chart.js library for forecast charts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="forecast.js"></script>
+    <script src="include/forecast.js"></script>
 </body>
 </html>
