@@ -1,4 +1,14 @@
 <?php
+    include_once("include/head.php");
+?>
+
+<?php
+    include_once("include/tail.php");
+?>
+
+<?php
+
+    session_start(); // start session to access $_SESSION super globals 
 
     include("include/database.php");
 
@@ -21,9 +31,7 @@
                 </script>
             ";
 
-            session_start();
-
-            $_SESSION["userID"] = $username;
+            $_SESSION["USER_ID"] = $username; // set current user session global
         }
         else
         {
@@ -31,7 +39,6 @@
                 alert(\"Invalid Login\")
                 window.location = \"index.php\";
                 </script>";
-
         }
     }
 ?>

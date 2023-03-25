@@ -1,4 +1,8 @@
 <?php
+    include_once("include/start_session.php");
+?>
+
+<?php
     include_once("include/head.php");
 ?>
 
