@@ -1,25 +1,43 @@
 import cv2 as cv
+import sys
+import time 
+from itertools import cycle
+
 
 # has (self, lotID, lotName, lotType, posListFileName, parkingLotImage)
 from ParkingLot import ParkingLot 
 
 # importing sql/databse.py to query/insert/update the databse
-import sys
 sys.path.append('../sql')
 from sql.database import Database, LotEntry
-#generate_select_query, generate_insert_query, generate_update_query
 
 db = Database #trying to instantaite the databse
 
+# grab lot A info
+lot_entryA = LotEntry(lotId=2)
+pos_list_file_nameA = './img/lotA/posList' #use this value for all 'lotA' images
 
-# create the select query to grab the lot A info
-lot_entry = LotEntry(lotId=2)
-pos_list_file_name = './img/lotA/posList'
-parking_lot_imageA1 = './img/lotA/lotA1.jpg'
+# define the list of lotA images to loop through
+lotA_images = cycle(['./img/lotA/lotA1.jpg', './img/lotA/lotA2.jpg', './img/lotA/lotA3.jpg'])
 
-parking_lot = ParkingLot(lot_entry, pos_list_file_name, parking_lot_imageA1)
-avail = ParkingLot.updateFullness(parking_lot)
-print(parking_lot) #prints "fullness=none"
+#parking_lot_imageA1 = './img/lotA/lotA1.jpg'
+
+# calculate lot A avail and return it to here
+while True:
+
+    # iterate throug each image in a circular way
+    parking_lot_imageA = next(lotA_images)
+
+    parking_lotA = ParkingLot(lot_entryA, pos_list_file_nameA, parking_lot_imageA)
+    avail_lotA = parking_lotA.updateFullness()
+
+    # need to update and insert to database instead of printing
+    print(avail_lotA)
+
+    # waits 5 min before processing next image
+    time.sleep(300)
+
+
 
 
 
@@ -69,7 +87,7 @@ fullness = PL.updateFullness()
 #query the database for parking lot info
 
 
-print("Good to here maybe")
+#print("Good to here maybe")
 
 
 
