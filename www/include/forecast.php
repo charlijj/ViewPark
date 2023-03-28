@@ -28,11 +28,11 @@
                     AND strftime('%w', date, 'unixepoch') = :forecast_day
                     AND strftime('%H', date, 'unixepoch') = :k
                     AND strftime('%M', date, 'unixepoch') BETWEEN '00' AND '59'";
-        $params = array(":lotId" => $lotId, ":forecast_day" => $forecast_day, ":k" => $k);
+        $params = array("lotId" => $lotId, "forecast_day" => $forecast_day, "k" => $k);
         // Results is a single integer, containing the average fullness for $lotId at time $k
         // Assign it to $chart_data[$k] if query was successful, otherwise assign 0.
-        // [$success, $results] = $db->run($query, $params);
-        // $chart_data[$k] = $success ? $results[0]['avg_fullness'] : 0;
+        $results = $db->run($query, $params);
+        $chart_data[$k] = $success ? $results[0]['avg_fullness'] : 0;
     }
 
 ?>
@@ -56,6 +56,7 @@
                     <option value="5">Friday</option>
                     <option value="6">Saturday</option>
                 </select>
+                <input type="submit" id="day-select-submit" value="Go">
         </form>
     </div>
 </div>

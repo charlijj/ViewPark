@@ -151,7 +151,7 @@ class Database{
 
 			// Bind the parameters to the statement
 			foreach($params as $key => $value)
-				if (is_numeric($value))
+				if (is_numeric($value) && !is_string($value))
 					$stmt->bindValue($key, $value, PDO::PARAM_INT);
 				else
 					$stmt->bindValue($key, $value, PDO::PARAM_STR);
