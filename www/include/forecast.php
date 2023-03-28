@@ -68,3 +68,12 @@ function submitForm() {
     document.getElementById("day-select-form").submit();
 }
  -->
+
+<!-- 
+
+- Where should i include the javascript
+    - Chart works, but only if i write javascript directly into availability.php
+- how can i set a variable 'lotId' in forecast.php after clicking on a lot availability modal?
+-  debug results after query / how should i be using ethan's database interface
+
+ -->

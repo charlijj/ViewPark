@@ -69,3 +69,5 @@
     })
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="include/forecast.js"></script>
