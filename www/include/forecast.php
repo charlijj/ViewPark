@@ -32,7 +32,9 @@
         // Results is a single integer, containing the average fullness for $lotId at time $k
         // Assign it to $chart_data[$k] if query was successful, otherwise assign 0.
         $results = $db->run($query, $params);
-        echo 'results0' . $results[0] . 'results1' . $results[1]['avg_fullness'];
+        $succeeded = $results[0];
+        $fullness = $results[1];
+        echo 'succeeded: ' . $succeeded . 'data: ' . $fullness['avg_fullness'];
         // $chart_data[$k] = $success ? (int)$results[0]['avg_fullness'] : 0;
     }
 
