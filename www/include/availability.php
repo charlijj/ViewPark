@@ -61,31 +61,9 @@
                     ?>
                 `;
 
-                // const ctx = document.getElementById('forecast-graph');
-
-                // new Chart(ctx, {
-                // type: 'bar',
-                // data: {
-                //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                //     datasets: [{
-                //     label: '# of Votes',
-                //     data: [12, 19, 3, 5, 2, 3],
-                //     borderWidth: 1
-                //     }]
-                // },
-                // options: {
-                //     scales: {
-                //     y: {
-                //         beginAtZero: true
-                //     }
-                //     }
-                // }
-                // });
-
-
                 const ctx = document.getElementById('forecast-graph');
 
-                const graph_label = "<?php echo $forecast_day ?>";
+                const graph_label = "<?php echo $forecast_day_name ?>";
 
                 // Time labels for the x axis of the chart
                 const l1 = '6';
