@@ -86,7 +86,30 @@
   cursor: pointer;
 }
 
-/* ---------------------------------------------------------------------------------------- */
+/* Forecast ------------------------------------------------------------------------------- */
+.forecast-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.forecast-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.forecast-graph-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-select {
+  margin-top: 20px;
+  text-align: center;
+}
 
 /* Session -------------------------------------------------------------------------------- */
 
