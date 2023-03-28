@@ -56,6 +56,7 @@
                     <option value="5">Friday</option>
                     <option value="6">Saturday</option>
                 </select>
+                <input type="submit" id="day-select-submit" value="Go">
         </form>
     </div>
 </div>
