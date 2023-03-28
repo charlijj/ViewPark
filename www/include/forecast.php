@@ -11,6 +11,7 @@
         // If the form was not submitted, set the $forecast_day variable to the current day
         $forecast_day = date('w'); // 'w' format returns the day of the week as a number, where 0 is Sunday, 1 is Monday, ... 6 is Saturday
     }
+    $forecast_day_name = date('l', strtotime("Sunday +{$forecast_day} days"));
 
     // The id of the lot that was clicked on.
     $lotId = 1;
