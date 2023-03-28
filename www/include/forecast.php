@@ -22,17 +22,17 @@
                         '14' => 0, '15' => 0, '16' => 0, '17' => 0);
     
     foreach ($chart_data as $k => $v) {
-        $query =   'SELECT AVG(fullness)
+        $query =   "SELECT AVG(fullness)
                     FROM availability
                     WHERE lotId = :lotId
                     AND strftime('%w', date, 'unixepoch') = :forecast_day
                     AND strftime('%H', date, 'unixepoch') = :k
-                    AND strftime('%M', date, 'unixepoch') BETWEEN '00' AND '59'';
+                    AND strftime('%M', date, 'unixepoch') BETWEEN '00' AND '59'";
         $params = array(":lotId" => $lotId, ":forecast_day" => $forecast_day, ":k" => $k);
         // Results is a single integer, containing the average fullness for $lotId at time $k
         // Assign it to $chart_data[$k] if query was successful, otherwise assign 0.
-        [$success, $results] = $db->run($query, $params);
-        $chart_data[$k] = $success ? $results->fetchColumn() : 0;
+        // [$success, $results] = $db->run($query, $params);
+        // $chart_data[$k] = $success ? $results->fetchColumn() : 0;
     }
 
 ?>
