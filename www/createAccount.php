@@ -20,7 +20,19 @@
 		if(count($query[1]) > 0){
 			echo "Account already exists!";
 		
+		}elseif($pass != $repass){
+			echo "Passwords need to match!";
+
 		}else{
+			$user = new UserEntry;
+			$user->userType = $type;
+			$user->email = $email;
+			$user->userName = $name;
+			$user->password = $pass;
+			$user->registrationDate = time();	
+
+			$db->create_user($user);
+
 			echo "New account made";
 		}
 	}
