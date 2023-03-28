@@ -127,10 +127,23 @@
                     },
                     options: {
                         scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Time'
+                                }
+                            },
                             y: {
-                            beginAtZero: true,
-                            max: 100
+                                title: {
+                                    display: true,
+                                    text: '% Full'
+                                },
+                                beginAtZero: true,
+                                max: 100
                             }
+                        },
+                        legend: {
+                            display: false
                         }
                     }
                 });
