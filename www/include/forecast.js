@@ -1,6 +1,6 @@
 const ctx = document.getElementById('forecast-graph');
 
-const graph_label = "<?php echo forecast_day ?>";
+const graph_label = "<?php echo $forecast_day ?>";
 
 // Time labels for the x axis of the chart
 const l1 = '6';
