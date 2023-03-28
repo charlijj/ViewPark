@@ -6,27 +6,34 @@
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // If the form was submitted, get the selected day of the week from the POST data
-        $selected_day = $_POST['forecast-day'];
-      
-        // Set the $forecast_day variable to the selected day
-        $forecast_day = $selected_day;
+        $forecast_day = $_POST['forecast-day'];
     } else {
         // If the form was not submitted, set the $forecast_day variable to the current day
-        $forecast_day = date('l'); // 'l' format returns the full name of the day of the week (e.g. "Monday")
+        $forecast_day = date('w'); // 'w' format returns the day of the week as a number, where 0 is Sunday, 1 is Monday, ... 6 is Saturday
     }
 
-    $d1 = 50;
-    $d2 = 50;
-    $d3 = 50;
-    $d4 = 50;
-    $d5 = 50;
-    $d6 = 50;
-    $d7 = 50;
-    $d8 = 50;
-    $d9 = 50;
-    $d10 = 50;
-    $d11 = 50;
-    $d12 = 50;
+    // The id of the lot that was clicked on.
+    $lotId = 1;
+
+    // The elements in $time_labels correspond to the labels on the chart, and the data we have in the database.
+    // The elements are used in the $query to select availabilities at a certain hour of the day, ie. 06 means 6am, 13 means 1pm, etc.
+    $chart_data = array('06' => 0, '07' => 0, '08' => 0, '09' => 0, 
+                        '10' => 0, '11' => 0, '12' => 0, '13' => 0, 
+                        '14' => 0, '15' => 0, '16' => 0, '17' => 0);
+    
+    foreach ($chart_data as $k => $v) {
+        $query =   'SELECT AVG(fullness)
+                    FROM availability
+                    WHERE lotId = :lotId
+                    AND strftime('%w', date, 'unixepoch') = :forecast_day
+                    AND strftime('%H', date, 'unixepoch') = :k
+                    AND strftime('%M', date, 'unixepoch') BETWEEN '00' AND '59';'
+        $params = array(":lotId" => $lotId, ":forecast_day" => $forecast_day, ":k" => $k);
+        // Results is a single integer, containing the average fullness for $lotId at time $k
+        // Assign it to $chart_data[$k] if query was successful, otherwise assign 0.
+        [$success, $results] = $db->run($query, $params);
+        $chart_data[$k] = $success ? $results->fetchColumn() : 0;
+    }
 
 ?>
 
@@ -40,13 +47,13 @@
     <div class="day-select">
         <label for="forecast-day">View forecast for:</label>
             <select id="forecast-day" name="forecast-day">
-                <option value="monday">Monday</option>
-                <option value="tuesday">Tuesday</option>
-                <option value="wednesday">Wednesday</option>
-                <option value="thursday">Thursday</option>
-                <option value="friday">Friday</option>
-                <option value="saturday">Saturday</option>
-                <option value="sunday">Sunday</option>
+                <option value="0">Sunday</option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
             </select>
     </div>
 </div>

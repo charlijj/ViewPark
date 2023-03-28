@@ -2,6 +2,7 @@ const ctx = document.getElementById('forecast-graph');
 
 const graph_label = "<?php echo forecast_day ?>";
 
+// Time labels for the x axis of the chart
 const l1 = '6';
 const l2 = '7';
 const l3 = '8';
@@ -14,19 +15,21 @@ const l9 = '2';
 const l10 = '3';
 const l11 = '4';
 const l12 = '5';
-
-const d1 = "<?php echo $d1 ?>";
-const d2 = "<?php echo $d2 ?>";
-const d3 = "<?php echo $d3 ?>";
-const d4 = "<?php echo $d4 ?>";
-const d5 = "<?php echo $d5 ?>";
-const d6 = "<?php echo $d6 ?>";
-const d7 = "<?php echo $d7 ?>";
-const d8 = "<?php echo $d8 ?>";
-const d9 = "<?php echo $d9 ?>";
-const d10 = "<?php echo $d10 ?>";
-const d11 = "<?php echo $d11 ?>";
-const d12 = "<?php echo $d12 ?>";
+ 
+// Data for the chart.
+// d1 corresponds to l1, d2 to l2, and so on.
+const d1 = "<?php echo $chart_data['06'] ?>";
+const d2 = "<?php echo $chart_data['07'] ?>";
+const d3 = "<?php echo $chart_data['08'] ?>";
+const d4 = "<?php echo $chart_data['09'] ?>";
+const d5 = "<?php echo $chart_data['10'] ?>";
+const d6 = "<?php echo $chart_data['11'] ?>";
+const d7 = "<?php echo $chart_data['12'] ?>";
+const d8 = "<?php echo $chart_data['13'] ?>";
+const d9 = "<?php echo $chart_data['14'] ?>";
+const d10 = "<?php echo $chart_data['15'] ?>";
+const d11 = "<?php echo $chart_data['16'] ?>";
+const d12 = "<?php echo $chart_data['17'] ?>";
 
 new Chart(ctx, {
     type: 'bar',
