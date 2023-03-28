@@ -35,7 +35,6 @@
         $success = $results[0];
         $data = $results[1];
         $chart_data[$k] = $success ? (int)$data[0][0] : 0;
-        echo $chart_data[$k];
     }
 
 ?>
