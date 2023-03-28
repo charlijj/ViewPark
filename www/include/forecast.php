@@ -11,6 +11,7 @@
         // If the form was not submitted, set the $forecast_day variable to the current day
         $forecast_day = date('w'); // 'w' format returns the day of the week as a number, where 0 is Sunday, 1 is Monday, ... 6 is Saturday
     }
+    $forecast_day_name = date('l', strtotime("Sunday +{$forecast_day} days"));
 
     // The id of the lot that was clicked on.
     $lotId = 1;
@@ -32,10 +33,9 @@
         // Results is a single integer, containing the average fullness for $lotId at time $k
         // Assign it to $chart_data[$k] if query was successful, otherwise assign 0.
         $results = $db->run($query, $params);
-        $succeeded = $results[0];
-        $fullness = $results[1];
-        echo 'succeeded: ' . $succeeded . 'data: ' . $fullness['avg_fullness'];
-        // $chart_data[$k] = $success ? (int)$results[0]['avg_fullness'] : 0;
+        $success = $results[0];
+        $data = $results[1];
+        $chart_data[$k] = $success ? (int)$data[0][0] : 0;
     }
 
 ?>
