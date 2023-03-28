@@ -34,7 +34,7 @@ spotWidth = int(spotDimensions.readline())
 spotHeight = int(spotDimensions.readline())
 
 # coefficient to multiply with the dimensions of a parking spot when counting non-zero pixels from threshold image. (apparently 25% is the magic number)
-countCoefficient = 0.25
+countCoefficient = 0.17
 
 cvImage = cv.imread(imageFile) # open lot image (but in a cool opencv way)
 cvGrayImage = cv.cvtColor(cvImage, cv.COLOR_BGR2GRAY) # covert image to grayscale
@@ -66,7 +66,7 @@ def checkParkingSpace():
         # cvzone.putTextRect(parkingLot, str(count), (x, y+h-10), scale = 1, thickness=1, offset=0) # display pixel count
 
         if count > (countCoefficient * spotWidth * spotHeight): # if parking spot is occupied
-            # cvzone.putTextRect(parkingLot, 'FULL', (x+w+6, y+h), scale = 1, thickness=1, offset=0) # display FULL status
+            cvzone.putTextRect(parkingLot, 'FULL', (x+w+6, y+h), scale = 1, thickness=1, offset=0) # display FULL status
             numFullSpots += 1 
 
         availability = round(numFullSpots / len(posList) * 100, 2)
@@ -102,7 +102,7 @@ while True:
 
         checkParkingSpace()
 
-        cv.rectangle(parkingLot, (pos[0], pos[1]), (pos[0]+pos[2], pos[1]+pos[3]), (255, 0, 233), 2) # draw rectangle around all selected spots
+        cv.rectangle(parkingLot, (pos[0], pos[1]), (pos[0]+pos[2], pos[1]+pos[3]), (255, 0, 233), 1) # draw rectangle around all selected spots
 
     cv.imshow('parkingLotImage', parkingLot) # show original image
     # cv.imshow('parking-lot', imgThreshold) # show threshold image
