@@ -31,9 +31,8 @@
         $params = array("lotId" => $lotId, "forecast_day" => $forecast_day, "k" => $k);
         // Results is a single integer, containing the average fullness for $lotId at time $k
         // Assign it to $chart_data[$k] if query was successful, otherwise assign 0.
-        [$success, $results] = $db->run($query, $params);
+        $results = $db->run($query, $params);
         $chart_data[$k] = $success ? $results[0]['avg_fullness'] : 0;
-        echo $chart_data[$k];
     }
 
 ?>
