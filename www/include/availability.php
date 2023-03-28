@@ -31,6 +31,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+    import {initChart} from 'forecast.js';
 
     const availabilityItem = document.querySelectorAll('.availability-container-item');
     const availabilityModal = document.getElementById("availabilityModal");
@@ -60,7 +61,7 @@
                         include("forecast.php");
                     ?>
                 `;
-                import {initChart} from 'forecast.js';
+                initChart();
             }
         })
     });
