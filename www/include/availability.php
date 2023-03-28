@@ -29,7 +29,7 @@
         <div class="availability-modal-close" id="availabilityModalClose">&times;</div>
     </div>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 
     const availabilityItem = document.querySelectorAll('.availability-container-item');
@@ -60,6 +60,7 @@
                         include("forecast.php");
                     ?>
                 `;
+                import {initChart} from 'forecast.js';
             }
         })
     });
@@ -69,5 +70,3 @@
     })
 
 </script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="include/forecast.js"></script>
