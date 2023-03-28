@@ -31,7 +31,6 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    import {initChart} from 'forecast.js';
 
     const availabilityItem = document.querySelectorAll('.availability-container-item');
     const availabilityModal = document.getElementById("availabilityModal");
@@ -61,7 +60,28 @@
                         include("forecast.php");
                     ?>
                 `;
-                initChart();
+
+                const ctx = document.getElementById('forecast-graph');
+
+                new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                    }
+                }
+                });
+
             }
         })
     });
