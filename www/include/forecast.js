@@ -38,7 +38,28 @@ new Chart(ctx, {
         datasets: [{
             label: graph_label,
             data: [d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12],
-            borderWidth: 1
+            borderWidth: 1,
+            // Colors bars based on value of data. Remove for blue
+            backgroundColor: function(context) {
+                var value = context.dataset.data[context.dataIndex];
+                if (value > 80) {
+                    return 'rgba(255, 99, 132, 0.2)';
+                } else if (value > 60) {
+                    return 'rgba(255, 221, 99, 0.2)';
+                } else {
+                    return 'rgba(120, 190, 120, 0.2)';
+                }
+            },
+            borderColor: function(context) {
+                var value = context.dataset.data[context.dataIndex];
+                if (value > 80) {
+                    return 'rgb(255, 99, 132)';
+                } else if (value > 60) {
+                    return 'rgb(255, 221, 99)';
+                } else {
+                    return 'rgb(120, 190, 120)';
+                }
+            }
         }]
     },
     options: {
