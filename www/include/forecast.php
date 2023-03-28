@@ -15,11 +15,24 @@
         $forecast_day = date('l'); // 'l' format returns the full name of the day of the week (e.g. "Monday")
     }
 
+    $d1 = 50;
+    $d2 = 50;
+    $d3 = 50;
+    $d4 = 50;
+    $d5 = 50;
+    $d6 = 50;
+    $d7 = 50;
+    $d8 = 50;
+    $d9 = 50;
+    $d10 = 50;
+    $d11 = 50;
+    $d12 = 50;
+
 ?>
 
 <div class="forecast-container">
     <div class="forecast-title">
-        <?php echo $forecast_day ?> Forecast
+        Availability Forecast
     </div>
     <div class="forecast-graph-container">
         <canvas id="forecast-graph"></canvas>
