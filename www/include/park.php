@@ -16,17 +16,12 @@
                 endTime				INTEGER NOT NULL
         */
 
-        // Get start and end times from form submission which is just hh:mm, and concatenate
-        // with today's date to make full datetime string
-        $startTimeStamp = date('Y-m-d') . $_POST['start-time'];
-        $endTimeStamp = date('Y-m-d') . $_POST['end-time'];
-
         // Set the variables for the SessionEntry object, which will be inserted into database.
         $sessionId = '';    // Not sure if we need this since it's a primary key and it would be auto-generated when inserting??
-        $lotId = '';        // Get somehow from the modal window that is clicked?
+        $lotId = 1;         // Have 1 as default for now. Need to get somehow from the modal window that is clicked?
         $userId = $_SESSION["USER_ID"];             // $_SESSION["USER_ID] is set when user logs in.
-        $startTime = strtotime($startTimeStamp);    // Converting timestamp to Unix epoch time for inserting into database
-        $endTime = strtotime($endTimeStamp);        // Converting timestamp to Unix epoch time for inserting into database
+        $startTime = strtotime(date('Y-m-d') . $_POST['start-time']); // Concatenate current date with time from form, then convert to Unix epoch time.
+        $endTime = strtotime(date('Y-m-d') . $_POST['end-time']); // Concatenate current date with time from form, then convert to Unix epoch time.
 
         $session->set_params(array(
             'sessionId' => $sessionId,
@@ -48,8 +43,8 @@
         */
 
         $_SESSION["LOT_ID"] = $lotId;
-        $_SESSION["PARK_START"] = $startTimeStamp;  
-        $_SESSION["PARK_END"] = $endTimeTimeStamp; 
+        $_SESSION["PARK_START"] = date('Y-m-d H:i', $startTime);  
+        $_SESSION["PARK_END"] = date('Y-m-d H:i', $endTime); 
 
     }
 
