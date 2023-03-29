@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/create_account_style.css">
+    <title>View Park</title>
+</head>
+
 <?php
 
 	include_once 'include/database.php';
@@ -18,11 +32,12 @@
 		$query = $db->get_users($hint);
 
 		if(count($query[1]) > 0){
-			echo "Account already exists!";
+            echo "<script>alert(`Account already exists with email $email`)</script>";
+            echo "<script>window.location.reload()</script>";
 		
 		}elseif($pass != $repass){
-			echo "Passwords need to match!";
-
+            echo "<script>alert(`Account already exists with email $email`)</script>";
+            echo "<script>window.location.reload()</script>";
 		}else{
 			$user = new UserEntry;
 			$user->userType = $type;
@@ -33,6 +48,8 @@
 
 			if ($db->create_user($user)){
                 echo "New account made";
+                echo "<script>alert(`New Account Created, Welcome $name`)</script>";
+                echo "<script>window.location = `index.php`</script>";
             }
             else {
                 echo "Account creation failed";
@@ -41,19 +58,6 @@
 	}
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/create_account_style.css">
-    <title>View Park</title>
-</head>
 <body>
 <div class="create-account-container">
     <h1>Create a new account</h1>
