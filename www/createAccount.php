@@ -32,12 +32,10 @@
 		$query = $db->get_users($hint);
 
 		if(count($query[1]) > 0){
-            echo "<script>alert(`Account already exists with email $email`)</script>";
-            echo "<script>window.location.reload()</script>";
+            echo "<script>alert(`Account already exists with email $email!`)</script>";
 		
 		}elseif($pass != $repass){
-            echo "<script>alert(`Account already exists with email $email`)</script>";
-            echo "<script>window.location.reload()</script>";
+            echo "<script>alert(`Passwords do not match!`)</script>";
 		}else{
 			$user = new UserEntry;
 			$user->userType = $type;
@@ -48,11 +46,11 @@
 
 			if ($db->create_user($user)){
                 echo "New account made";
-                echo "<script>alert(`New Account Created, Welcome $name`)</script>";
+                echo "<script>alert(`New Account Created, Welcome $name!`)</script>";
                 echo "<script>window.location = `index.php`</script>";
             }
             else {
-                echo "Account creation failed";
+                echo "<script>console.log(`account creation failed`)</script>";
             }
 		}
 	}
