@@ -48,7 +48,7 @@
     <div class="day-select">
         <form id="day-select-form" method-="post">
             <label for="forecast-day">View forecast for:</label>
-                <select id="forecast-day" name="forecast-day" onchange="submitForm()">
+                <select id="forecast-day" name="forecast-day">
                     <option value="0">Sunday</option>
                     <option value="1">Monday</option>
                     <option value="2">Tuesday</option>
