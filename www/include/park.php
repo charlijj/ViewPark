@@ -23,6 +23,16 @@
         $startTime = strtotime(date('Y-m-d') . $_POST['start-time']); // Concatenate current date with time from form, then convert to Unix epoch time.
         $endTime = strtotime(date('Y-m-d') . $_POST['end-time']); // Concatenate current date with time from form, then convert to Unix epoch time.
 
+        // Need to add some logic checking if user has a session active
+        // Either need to check if $_SESSION["PARK_END"] is set,
+        // and if it is set, check if current time is sooner than the session park end time
+
+        // Can do something along the lines of:
+        // $currentTime = time();
+        // if (isset($_SESSION["PARK_END"]) && ($currentTime < strtotime($_SESSION["PARK_END"]))) { 
+        //    User still has an active session 
+        // }
+        
         $session->set_params(array(
             'sessionId' => $sessionId,
             'lotId'     => $lotId,
