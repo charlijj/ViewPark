@@ -19,29 +19,43 @@
         // Set the variables for the SessionEntry object, which will be inserted into database.
         $sessionId = '';    // Not sure if we need this since it's a primary key and it would be auto-generated when inserting??
         $lotId = 1;         // Have 1 as default for now. Need to get somehow from the modal window that is clicked?
-        $userId = $_SESSION["USER_ID"];             // $_SESSION["USER_ID] is set when user logs in.
-        $startTime = strtotime(date('Y-m-d') . $_POST['start-time']); // Concatenate current date with time from form, then convert to Unix epoch time.
-        $endTime = strtotime(date('Y-m-d') . $_POST['end-time']); // Concatenate current date with time from form, then convert to Unix epoch time.
+        $userId = $_SESSION["USER_ID"]; // $_SESSION["USER_ID] is set to user's username when they log in.
+        $startTime = strtotime(date('Y-m-d') . $_POST['start-time']);   // Concatenate current date with time from form, then convert to Unix epoch time.
+        $endTime = strtotime(date('Y-m-d') . $_POST['end-time']);       // Concatenate current date with time from form, then convert to Unix epoch time.
 
-        // Need to add some logic checking if user has a session active
-        // Either need to check if $_SESSION["PARK_END"] is set,
-        // and if it is set, check if current time is sooner than the session park end time
+        /*
+            Need to add some logic to check if user has a session active.
+            Either need to check if $_SESSION["PARK_END"] is set,
+            and if it is set, check if current time is sooner than the session park end time
+            Can do something along the lines of:
+            $currentTime = time();
+            if (isset($_SESSION["PARK_END"]) && ($currentTime < strtotime($_SESSION["PARK_END"]))) { 
+                // User still has an active session 
+            }
+        */
 
-        // Can do something along the lines of:
-        // $currentTime = time();
-        // if (isset($_SESSION["PARK_END"]) && ($currentTime < strtotime($_SESSION["PARK_END"]))) { 
-        //    User still has an active session 
-        // }
-        
+        // Query database to get the numeric userId associated with the username, 
+        // where username is stored in $_SESSION["USER_ID"]
+        $username = $_SESSION["USER_ID"];
+        $query =   "SELECT userId
+                    FROM user
+                    WHERE username = :username";
+        $params = array("username" => $username);
+        $results = $db->run($query, $params);
+        $success = $results[0];
+        $data = $results[1];
+        $userIdInt = $success ? (int)$data[0][0] : 0;
+
+        // Set the parameters for the SessionEntry object.
         $session->set_params(array(
             'sessionId' => $sessionId,
             'lotId'     => $lotId,
-            'userId'    => $userId,
+            'userId'    => $userIdInt,
             'startTime' => $startTime,
             'endTime'   => $endTime
         ));
 
-        // Store the SessionEntry and associated variables in the database.
+        // Store the SessionEntry object variables in the database.
         $db->create_session($session);
 
         /*
