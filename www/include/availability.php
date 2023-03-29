@@ -58,6 +58,7 @@
                 availabilityModalContent.innerHTML = `                   
                     <?php
                         include("forecast.php");
+                        include("park.php");
                     ?>
                 `;
 
