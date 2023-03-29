@@ -34,7 +34,7 @@ spotWidth = int(spotDimensions.readline())
 spotHeight = int(spotDimensions.readline())
 
 # coefficient to multiply with the dimensions of a parking spot when counting non-zero pixels from threshold image. (apparently 25% is the magic number)
-countCoefficient = 0.15
+countCoefficient = 0.20
 
 cvImage = cv.imread(imageFile) # open lot image (but in a cool opencv way)
 cvGrayImage = cv.cvtColor(cvImage, cv.COLOR_BGR2GRAY) # covert image to grayscale
