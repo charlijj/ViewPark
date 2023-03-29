@@ -69,7 +69,7 @@ the i in the format string represents minutes with leading zeroes (00 through 59
                 <input type="time" id="start-time" name="start-time" value="<?php echo date('H:i')?>">
 
             <label for="end-time">End Time:</label>
-                <input type="time" id="end-time" name="end-time" value="<?php echo date('H:i', strtotime('+1 hour'))>
+                <input type="time" id="end-time" name="end-time" value="<?php echo date('H:i', strtotime('+1 hour'))?>">
 
             <input type="submit" value="Park Now">
         </form>
