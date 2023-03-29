@@ -70,8 +70,8 @@
                 // Context for the actual canvas that the chart is drawn to.
                 const ctx = document.getElementById('forecast-graph');
 
-                // Graph title.
-                const graph_label = "<?php echo $forecast_day_name ?>";
+                // Graph title is just the selected day of the week.
+                const graph_title = "<?php echo $forecast_day_name ?>";
 
                 // Time labels for the x axis of the chart.
                 const l1 = '6';
@@ -107,7 +107,7 @@
                     data: {
                         labels: [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12],
                         datasets: [{
-                            label: graph_label,
+                            label: graph_title,
                             data: [d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12],
                             borderWidth: 1,
                             // Colors bars based on value of data.
@@ -150,8 +150,14 @@
                                 max: 100
                             }
                         },
-                        legend: {
-                            display: false
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            title: {
+                                display: true,
+                                text: graph_title
+                            }
                         }
                     }
                 });
