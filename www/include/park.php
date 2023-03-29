@@ -56,18 +56,20 @@
 ?>
 
 <!-- 
-    Might want to eliminate the start-time from the form and just 
-    use the time at which the form is submitted instead.
+value="<php echo date('H:i')?>"
+sets the default value for start-time to the current time in hh:mm format.
+The H in the format string represents 24 hour format (00 through 23) and
+the i in the format string represents minutes with leading zeroes (00 through 59).
 -->
 <div class="park-container">
     <div class="park-container-content">
 
         <form id="park-form" method="post">
             <label for="start-time">Start Time:</label>
-                <input type="time" id="start-time" name="start-time">
+                <input type="time" id="start-time" name="start-time" value="<?php echo date('H:i')?>">
 
             <label for="end-time">End Time:</label>
-                <input type="time" id="end-time" name="end-time">
+                <input type="time" id="end-time" name="end-time" value="<?php echo date('H:i', strtotime('+1 hour'))>
 
             <input type="submit" value="Park Now">
         </form>
