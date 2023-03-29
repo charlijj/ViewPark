@@ -31,9 +31,12 @@
 			$user->password = $pass;
 			$user->registrationDate = time();	
 
-			$db->create_user($user);
-
-			echo "New account made";
+			if ($db->create_user($user)){
+                echo "New account made";
+            }
+            else {
+                echo "Account creation failed";
+            }
 		}
 	}
 ?>
