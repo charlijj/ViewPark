@@ -18,9 +18,7 @@
 
     // The elements in $time_labels correspond to the labels on the chart, and the data we have in the database.
     // The elements are used in the $query to select availabilities at a certain hour of the day, ie. 06 means 6am, 13 means 1pm, etc.
-    $chart_data = array('06' => 0, '07' => 0, '08' => 0, '09' => 0, 
-                        '10' => 0, '11' => 0, '12' => 0, '13' => 0, 
-                        '14' => 0, '15' => 0, '16' => 0, '17' => 0);
+    $chart_data = array('06' => 0, '07' => 0, '08' => 0, '09' => 0, '10' => 0, '11' => 0, '12' => 0, '13' => 0, '14' => 0, '15' => 0, '16' => 0, '17' => 0);
     
     foreach ($chart_data as $k => $v) {
         $query =   "SELECT ROUND(AVG(fullness)) as avg_fullness
