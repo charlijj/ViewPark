@@ -18,9 +18,7 @@
 
     // The elements in $time_labels correspond to the labels on the chart, and the data we have in the database.
     // The elements are used in the $query to select availabilities at a certain hour of the day, ie. 06 means 6am, 13 means 1pm, etc.
-    $chart_data = array('06' => 0, '07' => 0, '08' => 0, '09' => 0, 
-                        '10' => 0, '11' => 0, '12' => 0, '13' => 0, 
-                        '14' => 0, '15' => 0, '16' => 0, '17' => 0);
+    $chart_data = array('06' => 0, '07' => 0, '08' => 0, '09' => 0, '10' => 0, '11' => 0, '12' => 0, '13' => 0, '14' => 0, '15' => 0, '16' => 0, '17' => 0);
     
     foreach ($chart_data as $k => $v) {
         $query =   "SELECT ROUND(AVG(fullness)) as avg_fullness
@@ -29,7 +27,7 @@
                     AND strftime('%w', date, 'unixepoch') = :forecast_day
                     AND strftime('%H', date, 'unixepoch') = :k
                     AND strftime('%M', date, 'unixepoch') BETWEEN '00' AND '59'";
-        $params = array("lotId" => $lotId, "forecast_day" => $forecast_day, "k" => $k);
+        $params = array("lotId" => $lotId, "forecast_day" => $forecast_day, "k" => (string)$k);
         // Results is a single integer, containing the average fullness for $lotId at time $k
         // Assign it to $chart_data[$k] if query was successful, otherwise assign 0.
         $results = $db->run($query, $params);
@@ -48,9 +46,9 @@
         <canvas id="forecast-graph"></canvas>
     </div>
     <div class="day-select">
-        <form id="day-select-form" method-="post">
+        <form id="day-select-form" method="post">
             <label for="forecast-day">View forecast for:</label>
-                <select id="forecast-day" name="forecast-day" onchange="submitForm()">
+                <select id="forecast-day" name="forecast-day">
                     <option value="0">Sunday</option>
                     <option value="1">Monday</option>
                     <option value="2">Tuesday</option>
@@ -63,21 +61,3 @@
         </form>
     </div>
 </div>
-
-<!-- 
-for when the day gets selected, need to update the value so chart gets updated 
-when a new day is selected
-
-function submitForm() {
-    document.getElementById("day-select-form").submit();
-}
- -->
-
-<!-- 
-
-- Where should i include the javascript
-    - Chart works, but only if i write javascript directly into availability.php
-- how can i set a variable 'lotId' in forecast.php after clicking on a lot availability modal?
--  debug results after query / how should i be using ethan's database interface
-
- -->

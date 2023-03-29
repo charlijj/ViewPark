@@ -58,14 +58,23 @@
                 availabilityModalContent.innerHTML = `                   
                     <?php
                         include("forecast.php");
+                        include("park.php");
                     ?>
                 `;
 
+                // Since by default the chart displays data for the current day,
+                // set the default value of the select dropdown menu to be the current day rather than 'Sunday'.
+                document.getElementById("forecast-day").value = "<?php echo $forecast_day; ?>";
+
+                /**********  AVAILABILITY CHART **********/
+
+                // Context for the actual canvas that the chart is drawn to.
                 const ctx = document.getElementById('forecast-graph');
 
-                const graph_label = "<?php echo $forecast_day_name ?>";
+                // Graph title is just the selected day of the week.
+                const graph_title = "<?php echo $forecast_day_name ?>";
 
-                // Time labels for the x axis of the chart
+                // Time labels for the x axis of the chart.
                 const l1 = '6';
                 const l2 = '7';
                 const l3 = '8';
@@ -99,28 +108,28 @@
                     data: {
                         labels: [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12],
                         datasets: [{
-                            label: graph_label,
+                            label: graph_title,
                             data: [d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12],
                             borderWidth: 1,
-                            // Colors bars based on value of data. Remove for blue
+                            // Colors bars based on value of data.
                             backgroundColor: function(context) {
                                 var value = context.dataset.data[context.dataIndex];
                                 if (value > 80) {
-                                    return 'rgba(255, 99, 132, 0.2)';
+                                    return 'rgba(255, 99, 132, 0.2)'; // Red 
                                 } else if (value > 60) {
-                                    return 'rgba(255, 221, 99, 0.2)';
+                                    return 'rgba(255, 221, 99, 0.2)'; // Yellow
                                 } else {
-                                    return 'rgba(120, 190, 120, 0.2)';
+                                    return 'rgba(120, 190, 120, 0.2)'; // Green
                                 }
                             },
                             borderColor: function(context) {
                                 var value = context.dataset.data[context.dataIndex];
                                 if (value > 80) {
-                                    return 'rgb(255, 99, 132)';
+                                    return 'rgb(255, 99, 132)'; // Red
                                 } else if (value > 60) {
-                                    return 'rgb(255, 221, 99)';
+                                    return 'rgb(255, 221, 99)'; // Yellow
                                 } else {
-                                    return 'rgb(120, 190, 120)';
+                                    return 'rgb(120, 190, 120)'; // Green
                                 }
                             }
                         }]
@@ -142,11 +151,18 @@
                                 max: 100
                             }
                         },
-                        legend: {
-                            display: false
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            title: {
+                                display: true,
+                                text: graph_title
+                            }
                         }
                     }
                 });
+                /**********  END AVAILABILITY CHART **********/
 
             }
         })

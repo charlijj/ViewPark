@@ -21,7 +21,7 @@ class Availability:
         self.imagePath = imagePath
         
         # coefficient to multiply with the dimensions of a parking spot when counting non-zero pixels from threshold image
-        self.countCoefficient = 0.25 # (apparently 25% is the magic number)
+        self.countCoefficient = 0.2 # (apparently 20% is the magic number)
         
     def calcFullness(self):
         
