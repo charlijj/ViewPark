@@ -23,6 +23,29 @@ db = Database #trying to instantaite the databse
 #parking_lot_imageA1 = './img/lotA/lotA1.jpg'
 
 # calculate lot avail and return it to here for now, need to send it to db afterwards tho
+counter = 1
+
+while True:
+
+    for j in range(1, 6):
+        lot_id = j + 1 #lotA has lot_id 2, lotB has lot_id 3, lotC has lot_id 4
+        lot_entry = LotEntry(lotId=lot_id) # starts at lot_Id = 2
+        name = chr(64+j)
+        pos_list_file_name = f'./img/lot{name}/posList' # value for all 'lotA' images
+        lot_images = f'./img/lot{name}/lot{name}{counter}.jpg'
+
+        avail_list = []
+        for image in lot_images:
+            parking_lot = ParkingLot(lot_entry, pos_list_file_name, image)
+            avail_lot = parking_lot.updateFullness()
+            print(name, counter, avail_lot)
+
+    counter +=1
+
+time.sleep(5)
+
+
+"""
 while True:
     for i in range(1, 6): #loop thru the 5 lotx1's 
         lot_id = i + 1 #lotA has lot_id 2, lotB has lot_id 3, lotC has lot_id 4
@@ -36,7 +59,7 @@ while True:
         for image in lot_images:
             parking_lot = ParkingLot(lot_entry, pos_list_file_name, image)
             avail_lot = parking_lot.updateFullness()
-            print(lot_images)
+            print(name, i, avail_lot)
 
 
     # need to update and insert to database instead of printing
@@ -45,7 +68,7 @@ while True:
                # print(f'\tImage {j+1}: {avail}')
 
     # waits 5 sec before processing next image. Change to 5 min after testing 
-    time.sleep(5)
+    time.sleep(5)"""
 
 """
 lot_entry = LotEntry()
