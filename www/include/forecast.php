@@ -46,7 +46,7 @@
         <canvas id="forecast-graph"></canvas>
     </div>
     <div class="day-select">
-        <form id="day-select-form" method-="post">
+        <form id="day-select-form" method="post">
             <label for="forecast-day">View forecast for:</label>
                 <select id="forecast-day" name="forecast-day">
                     <option value="0">Sunday</option>
