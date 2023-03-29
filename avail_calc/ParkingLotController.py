@@ -40,7 +40,7 @@ while True:
 
 
     # need to update and insert to database instead of printing
-       # print(f'Lot {chr(64+i)}:')
+       # print(f'Lot {chr(64+i)}:')]]]
        # for j, avail in enumerate(avail_list):
                # print(f'\tImage {j+1}: {avail}')
 

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 import sqlite3 as sql
-
+import os
 
 class DataEntry:
 
@@ -150,10 +150,16 @@ class Database:
         """
         Reset all tables in the database
         """
+        dir = os.path.dirname(__file__)
+       
+        print('Dropping old tables')
+        self.run_script(os.path.join(dir, 'drop_tables.sql'))
 
-        self.run_script('drop_tables.sql')
-        self.run_script('create_tables.sql')
-        self.run_script('data.sql')
+        print('Creating tables')
+        self.run_script(os.path.join(dir, 'create_tables.sql'))
+
+        print('Copying test data')
+        self.run_script(os.path.join(dir, 'data.sql'))
 
 
     def generate_select_query(self, query, args):
