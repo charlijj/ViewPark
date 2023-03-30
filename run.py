@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 import sys, time
 from sql.database import Database
-#from avail_calc.ParkingLotController import *
-
+from avail_calc import getFullness
 
 if __name__ == '__main__':
 
@@ -36,6 +35,9 @@ if __name__ == '__main__':
 			elif arg == '--stop':
 				halt_execution = True
 
+			elif arg == '--interval':
+				interval_minutes = float(arg2)
+
 	# Start execution of the application components
 	print('Connecting to ' + db_file)
 	db = Database(db_file)
@@ -52,4 +54,12 @@ if __name__ == '__main__':
 	print('Running server maintainer use CTRL+Z to stop')
 
 	while(True):
+
+		print('Checking each lot\'s camera for fullness')
+		avals = getFullness()
+
+		for aval in avals:
+			print('Adding ' + str(aval))
+			db.create_availability(aval)
+
 		time.sleep(interval_minutes * 60)
