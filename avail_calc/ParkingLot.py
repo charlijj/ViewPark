@@ -4,8 +4,8 @@
 # as well as updating the forecast of the parking lot (maybe.. not sure where were calculating forecast anymore tbh).
 
 import pickle
-from ParkingSpot import ParkingSpot
-from Availability import Availability
+from .ParkingSpot import ParkingSpot
+from .Availability import Availability
 import sys
 import time
 
