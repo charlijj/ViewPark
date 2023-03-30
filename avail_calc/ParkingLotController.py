@@ -18,7 +18,7 @@ from sql.database import Database, LotEntry
 counter = 1
 
 # function that loops and calculates the availabilties of all lot images
-def getFullness(self):
+def getFullness():
 
     for j in range(1, 6):
         lot_id = j + 1 #lotA has lot_id 2, lotB has lot_id 3, lotC has lot_id 4, etc...
@@ -27,7 +27,7 @@ def getFullness(self):
         pos_list_file_name = f'./img/lot{name}/posList' # value for all 'lotX' images
         lot_images = [f'./img/lot{name}/lot{name}{counter}.jpg'] # put the lot images in a list
 
-        #avail_list = []
+        avail_list = []
 
         # send each image from each lot the ParkingLot class
         for image in lot_images:
@@ -35,12 +35,11 @@ def getFullness(self):
 
             # get the availabilities and return
             avail_lot = parking_lot.updateFullness()
-            return avail_lot
+            avail_list.append(avail_lot)
 
     counter +=1
 
     if counter > 3:
         counter = 1
 
-
-
+    return avail_list;
