@@ -48,6 +48,8 @@
                 echo "New account made";
                 echo "<script>alert(`New Account Created, Welcome $name!`)</script>";
                 echo "<script>window.location = `index.php`</script>";
+
+				$_SESSION["USER_ID"] = $username; // set current user session global
             }
             else {
                 echo "<script>console.log(`account creation failed`)</script>";
