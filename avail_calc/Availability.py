@@ -1,6 +1,6 @@
 import cv2 as cv
 from typing import List
-from .ParkingSpot import ParkingSpot
+from ParkingSpot import ParkingSpot
 
 # Availability Class
 

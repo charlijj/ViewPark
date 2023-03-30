@@ -6,7 +6,7 @@ import sys
 
 
 # has (self, lotID, lotName, lotType, posListFileName, parkingLotImage)
-from .ParkingLot import ParkingLot 
+from ParkingLot import ParkingLot 
 
 # importing sql/databse.py to get the LotEntry info
 sys.path.append('../')
