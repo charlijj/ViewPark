@@ -2,18 +2,20 @@
 
     $db = new Database;
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // If the form was submitted, get the selected day of the week from the POST data
-        $forecast_day = $_POST['forecast-day'];
-    } else {
-        // If the form was not submitted, set the $forecast_day variable to the current day
+    if (isset($_POST['forecast-day']))
+    // If the form was submitted, get the selected day of the week from the POST data
+    {
+        $forecast_day = $_POST['forecast-day'];    }
+    else 
+    // If the form was not submitted, set the $forecast_day variable to the current day
+    {
         $forecast_day = date('w'); // 'w' format returns the day of the week as a number, where 0 is Sunday, 1 is Monday, ... 6 is Saturday
     }
+
     $forecast_day_name = date('l', strtotime("Sunday +{$forecast_day} days"));
 
     // The id of the lot that was clicked on.
     $lotId = 1;
-    echo $_SESSION["LOT_ID"];
 
     // The elements in $time_labels correspond to the labels on the chart, and the data we have in the database.
     // The elements are used in the $query to select availabilities at a certain hour of the day, ie. 06 means 6am, 13 means 1pm, etc.
