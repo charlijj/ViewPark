@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import sys, time
+import os, sys, time
 from sql.database import Database
 from avail_calc import getFullness
 
@@ -26,10 +26,10 @@ if __name__ == '__main__':
 				print("TODO: Implement help function");
 				halt_execution = True
 
-			elif arg == '--init-db':
+			elif arg == '--init-database':
 				init_db = True
 
-			elif arg == '--db':
+			elif arg == '--database':
 				db_file = arg2
 
 			elif arg == '--stop':
@@ -39,6 +39,9 @@ if __name__ == '__main__':
 				interval_minutes = float(arg2)
 
 	# Start execution of the application components
+	if not os.path.isfile(db_file):
+		init_db = True
+
 	print('Connecting to ' + db_file)
 	db = Database(db_file)
 	
