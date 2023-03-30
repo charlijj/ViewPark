@@ -2,6 +2,7 @@
 	
 	<?php
 		include_once 'database.php';		
+        session_start(); // Start session to access $_SESSION super globals
 
 		$db = new Database;
 
@@ -54,7 +55,9 @@
     availabilityItem.forEach(availabilityItem => 
     {
         availabilityItem.addEventListener('click', () => {
-            console.log(availabilityItem.id);
+
+            let lotID = availabilityItem.id.substr(-1);
+
             availabilityModal.style.display = "flex";
 
             const LOGIN_STATUS = window.localStorage.getItem("LOGIN_STATUS");
@@ -67,12 +70,26 @@
                     ?>
                 `;
             }
-            else {
-                // This will be replace with another include for the forecast and other info
+            else { // show parking lot avaliability forecast and park option
+
+                // Send the lotID value to the server-side PHP script using AJAX
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "<?php echo $_SERVER["PHP_SELF"];?>");
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.onload = () => {
+                    if (xhr.status === 200) {
+                        console.log(lotID);
+                        <?php $_SESSION['LOT_ID'] = $_POST['lotID'];?>;
+                    } else {
+                        console.error("Error:", xhr.status);
+                    }
+                };
+                xhr.send(`lotID=${lotID}`);
+
                 availabilityModalContent.innerHTML = `                   
                     <?php
-                        include("forecast.php");
-                        include("park.php");
+                        include_once("forecast.php");
+                        include_once("park.php");
                     ?>
                 `;
 

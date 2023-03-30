@@ -1,7 +1,4 @@
 <?php
-    include_once("database.php");
-
-    session_start(); // Start session to access $_SESSION super globals
 
     $db = new Database;
     $session = new SessionEntry;

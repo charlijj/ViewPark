@@ -1,7 +1,5 @@
 <?php
 
-    include_once("database.php");
-
     $db = new Database;
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -15,6 +13,7 @@
 
     // The id of the lot that was clicked on.
     $lotId = 1;
+    echo $_SESSION["LOT_ID"];
 
     // The elements in $time_labels correspond to the labels on the chart, and the data we have in the database.
     // The elements are used in the $query to select availabilities at a certain hour of the day, ie. 06 means 6am, 13 means 1pm, etc.
