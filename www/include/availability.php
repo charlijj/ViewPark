@@ -8,11 +8,25 @@
 		$query = $db->get_lots();
 
 		foreach($query[1] as $lot ){
+
+			// Check the current fullness of the lot
+			$query = 'SELECT fullness FROM availability WHERE lotId=:lotId ORDER BY date DESC';
+			$params = array('lotId' => $lot->lotId);
+			$results = $db->run($query, $params);
+			$success = $results[0];
+			$rows = $results[1];
+
+			if ($success && count($rows) >= 1){
+				$fullness = $rows[0]['fullness'];
+
+			}else
+				$fullness = 0;
+
 			echo "
 			<div class='availability-container-item' id='lot$lot->lotId'>
 				<p>$lot->lotName</p>
 				<p>$lot->location</p>
-				<p>$lot->fullness% full</p>
+				<p>$fullness% full</p>
 			</div>
 			";
 		}
