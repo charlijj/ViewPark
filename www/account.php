@@ -3,10 +3,6 @@
 ?>
 
 <?php
-    include_once("include/tail.php");
-?>
-
-<?php
 
     session_start(); // start session to access $_SESSION super globals 
 
@@ -24,9 +20,8 @@
 
         if (count($db->get_users($user)[1]) == 1) // if user credentials are valid
         {
-            // set LOGIN_STATUS to true and reload page, makes the login modals disappear 
+            // reload page, makes the login modals disappear 
             echo "<script>
-                window.localStorage.setItem(\"LOGIN_STATUS\", \"1\"); 
                 window.location = \"index.php\";
                 </script>
             ";
@@ -41,4 +36,8 @@
                 </script>";
         }
     }
+?>
+
+<?php
+    include_once("include/tail.php");
 ?>

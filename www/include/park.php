@@ -15,7 +15,7 @@
 
         // Set the variables for the SessionEntry object, which will be inserted into database.
         $sessionId = '';    // Not sure if we need this since it's a primary key and it would be auto-generated when inserting??
-        $lotId = 1;         // Have 1 as default for now. Need to get somehow from the modal window that is clicked?
+        $lotId = $_POST['lot-id'];         // Have 1 as default for now. Need to get somehow from the modal window that is clicked?
         $userId = $_SESSION["USER_ID"]; // $_SESSION["USER_ID] is set to user's username when they log in.
         $startTime = strtotime(date('Y-m-d') . $_POST['start-time']);   // Concatenate current date with time from form, then convert to Unix epoch time.
         $endTime = strtotime(date('Y-m-d') . $_POST['end-time']);       // Concatenate current date with time from form, then convert to Unix epoch time.
@@ -86,6 +86,8 @@ the i in the format string represents minutes with leading zeroes (00 through 59
 
             <label for="end-time">End Time:</label>
                 <input type="time" id="end-time" name="end-time" value="<?php echo date('H:i', strtotime('+1 hour'))?>">
+
+			<input type="hidden" id="lot-id" name="lot-id" value="1">
 
             <input type="submit" value="Park Now">
         </form>

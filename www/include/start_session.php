@@ -1,8 +1,4 @@
 <?php
-
-    // Clear all session globals from previous sessions
-    session_unset();
-
     // Set session cookie parameters
     session_set_cookie_params([
         'lifetime' => 0,    // Set the cookie lifetime to 0, which means it will expire when the browser is closed.
@@ -14,6 +10,8 @@
     ]);
 
     session_start();
-?>
 
-<script>console.log("<?php echo (session_status() == PHP_SESSION_ACTIVE) ? 'SESSION IS ACTIVE' : 'SESSION IS NOT ACTIVE';?>");</script>
+    // Clear all session globals from previous sessions
+	if($_GET['logout'])
+    	session_unset();
+?>

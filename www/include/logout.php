@@ -1,22 +1,13 @@
-<div class="logout-button" id="logoutButton">
-    <span>LOG OUT</span>
-</div>
+<?php if (isset($_SESSION['USER_ID'])) { ?>	
+	<div class='logout-button' id='logoutButton'>
+		<span>LOG OUT</span>
+	</div>
 
-<script>
-    const logoutButton = document.getElementById("logoutButton");
+	<script>
+		const logoutButton = document.getElementById("logoutButton");
 
-    logoutButton.addEventListener("click", () => {
-        window.localStorage.setItem("LOGIN_STATUS", "0");
-        window.location.reload();
-    });
-    
-    LOGIN_STATUS = window.localStorage.getItem("LOGIN_STATUS");
-
-    if (LOGIN_STATUS == 0)
-    {
-        logoutButton.style.display = "none";
-    }
-    else {
-        logoutButton.style.display = "flex";
-    }
-</script>
+		logoutButton.addEventListener("click", () => {
+			window.location = window.location.href + "?logout=1";
+		});
+	</script>
+<?php } ?>

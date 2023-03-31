@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/create_account_style.css">
-    <title>View Park</title>
-</head>
+<?php
+    include_once("include/start_session.php");
+?>
 
 <?php
+    include_once("include/head.php");
+?>
 
+<?php
 	include_once 'include/database.php';
 
     // Enter form code here
@@ -36,6 +29,7 @@
 		
 		}elseif($pass != $repass){
             echo "<script>alert(`Passwords do not match!`)</script>";
+	
 		}else{
 			$user = new UserEntry;
 			$user->userType = $type;
@@ -44,13 +38,22 @@
 			$user->password = $pass;
 			$user->registrationDate = time();	
 
-			if ($db->create_user($user)){
-                echo "New account made";
-                echo "<script>alert(`New Account Created, Welcome $name!`)</script>";
-                echo "<script>window.location = `index.php`</script>";
+			// Try to create user account
+			$db->create_user($user);
 
-				$_SESSION["USER_ID"] = $username; // set current user session global
-            }
+			// Check database to see if it was added
+			$results = $db->get_users($user);
+			$success = $results[0];
+			$rows	 = $results[1];
+
+			if(count($rows) == 1){
+
+				echo "New account made";
+				echo "<script>alert(`New Account Created, Welcome $name!`)</script>";
+				echo "<script>window.location = `index.php`</script>";
+
+				$_SESSION["USER_ID"] = $rows[0]['userId']; // set current user session global
+			}
             else {
                 echo "<script>console.log(`account creation failed`)</script>";
             }
@@ -58,10 +61,12 @@
 	}
 ?>
 
-<body>
 <div class="create-account-container">
+
     <h1>Create a new account</h1>
+
     <div class="line"></div>
+
     <form action="createAccount.php" method="post" class="create-account-form">
         <p>What type of user are you?</p>
         <div class="user-type-container">
