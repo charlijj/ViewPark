@@ -65,4 +65,38 @@ if __name__ == '__main__':
 			print('Adding ' + str(aval))
 			db.create_availability(aval)
 
+			# Generate JSON lot data
+			with open('www/lots/'+str(aval.lotId), 'w') as file:
+		
+				days = []
+				for day in range(0, 7):
+					hours = []
+
+					for hour in range(6, 17):
+						q_day = str(day)
+						q_hour = str(hour).rjust(2, '0')
+
+						query = "															\
+							SELECT ROUND(AVG(fullness)) as avg_fullness						\
+							FROM availability												\
+							WHERE lotId = :lotId											\
+							AND strftime('%w', date, 'unixepoch') = :day					\
+							AND strftime('%H', date, 'unixepoch') = :hour					\
+							AND strftime('%M', date, 'unixepoch') BETWEEN '00' AND '59'"
+
+						params = {'lotId': aval.lotId, 'day': q_day, 'hour': q_hour}
+
+						success, results = db.run(query, params)
+
+						if(len(results) == 1 and results[0][0] != None):
+							hours.append(results[0][0])
+						else:
+							hours.append(0)					
+
+					days.append('"day'+str(day)+'": ' + str(hours))
+				
+				data = '{ "lot": {' + str(days)[1:-2].replace('\'', '') + '} }'	
+
+				file.write(data)			
+
 		time.sleep(interval_minutes * 60)
