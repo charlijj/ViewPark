@@ -6,6 +6,18 @@
 
 		$db = new Database;
 
+		// get current users user type (general or staff)
+		$query = 'SELECT userType FROM user WHERE userName=:userName';
+		$params = array('userName' => $_SESSION['USER_ID']);
+		$results = $db->run($query, $params);
+		$success = $results[0];
+		$rows = $results[1];
+
+		if ($success && count($rows) >= 1)
+		{
+			$userType = $rows[0]['userType'];
+		}
+
 		$query = $db->get_lots();
 
 		foreach($query[1] as $lot ){
@@ -19,19 +31,22 @@
 
 			if ($success && count($rows) >= 1){
 				$fullness = $rows[0]['fullness'];
+				$lotType = $rows[0]['lotType'];
 
 			}else
 				$fullness = 0;
 
-			echo "
-			<div class='availability-container-item' id='lot$lot->lotId'>
-				<p>$lot->lotName</p>
-				<p>$lot->location</p>
-				<p>$fullness% full</p>
-			</div>
-			";
+			// display only general lots for general users, all lots for staff users or if user is not logged in
+			if ($lot->lotType == $userType || $userType == 2 || !isset($userType)) {
+				echo "
+				<div class='availability-container-item' id='lot$lot->lotId'>
+					<p>$lot->lotName</p>
+					<p>$lot->location</p>
+					<p>$fullness% full</p>
+				</div>
+				";
+			}
 		}
-
 	?>
 	
 </div>
