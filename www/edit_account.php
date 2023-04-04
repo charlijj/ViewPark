@@ -6,7 +6,6 @@
     include_once("include/head.php");
 ?>
 
-
 <?php
 	include_once 'include/database.php';
 
@@ -22,27 +21,25 @@
         $db = new Database;
 		$hint = new UserEntry;
 
-        //echo "<script>console.log(`$currPass`)</script>";
-
 		$hint->userName = $_SESSION['USER_ID'];
 		$hint->password = $currPass;
-
+        
         if(count($db->get_users($hint)[1]) == 1){
 
             if (isset($_POST['del_account'])){
-                echo "<script>alert(`Account is being deleted`)</script>";
-                // insert code to delete account 
+                //$db->delete_row('user', $hint); // delete the user
+                unset($_SESSION['USER_ID']);
+                echo "<script>alert(`Account Deleted`);</script>";
+                echo "<script>window.location = `index.php`;</script>";
+            }
+            else if (isset($_POST['password']) && ($pass != $repass)) {
+                echo "<script>alert(`New passwords do not match!`);</script>";
             }
             else{
                 $user = new UserEntry;
 
-                if (isset($_POST['password'])){
-                    if ($pass != $repass) {
-                    }
-                    else {
-                        $user->password = $pass;
-                    }
-                }
+                $user->password = $pass;
+                
                 if (isset($_POST['user-type'])){
                     $user->userType = $type;
                 }
@@ -53,8 +50,8 @@
                     $user->userType = $name;
                 }
 
+                if ($db->update_users($hint, $user))
                 echo "<script>alert(`Account updated`)</script>";
-                // insert code to update user 
             }
 
 		} else {
