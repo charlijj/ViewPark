@@ -4,13 +4,13 @@
         <p>Log in to use this feature</p>
         <form action="account.php" method="post" class="login-modal-content">
             <label for="username">User Name: 
-                <input type="text" name="username" id="username">
+                <input type="text" name="username">
             </label>
             <label for="username">Password: 
-                <input type="password" name="password" id="password">
+                <input type="password" name="password">
             </label>
             <input type="submit" id="submitButton" value="Log In">
-            <a href="createAccount.php">Create Account</a>
+            <a href="create_account.php">Create Account</a>
         </form>
     </div>  
 </div>

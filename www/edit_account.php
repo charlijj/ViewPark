@@ -27,7 +27,9 @@
         if(count($db->get_users($hint)[1]) == 1){
 
             if (isset($_POST['del_account'])){
-                //$db->delete_row('user', $hint); // delete the user
+                
+                //$db->delete_row('user', $hint); // delete current user from database
+
                 unset($_SESSION['USER_ID']);
                 echo "<script>alert(`Account Deleted`);</script>";
                 echo "<script>window.location = `index.php`;</script>";
@@ -50,7 +52,8 @@
                     $user->userType = $name;
                 }
 
-                if ($db->update_users($hint, $user))
+                //$db->update_users($hint, $user) // update the current users data 
+
                 echo "<script>alert(`Account updated`)</script>";
             }
 
@@ -84,11 +87,11 @@
         <p>Change user type: </p>
         <div class="user-type-container">
             <label for="user-type">General Parking User: 
-                <input type="radio" name="user-type" value="general" checked>
+                <input type="radio" name="user-type" value="1" checked>
             </label>
 
             <label for="user-type" style="margin-left: 25px;">Staff Parking User: 
-                <input type="radio" name="user-type" value="staff">
+                <input type="radio" name="user-type" value="2">
             </label>
         </div>
 
