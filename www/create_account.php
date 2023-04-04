@@ -9,7 +9,6 @@
 <?php
 	include_once 'include/database.php';
 
-    // Enter form code here
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 		$type 	= $_POST['user-type'];
@@ -67,7 +66,7 @@
 
     <div class="line"></div>
 
-    <form action="createAccount.php" method="post" class="create-account-form">
+    <form action="create_account.php" method="post" class="create-account-form">
         <p>What type of user are you?</p>
         <div class="user-type-container">
             <label for="user-type">General Parking User: 

@@ -8,6 +8,14 @@
   height: 800px;
 }
 
+.create-account-container a {
+  color: #fff;
+  text-decoration: none;
+}
+.create-account-container a:hover {
+  color: #9e9e9e;
+}
+
 .create-account-form {
   display: flex;
   align-items: center;
