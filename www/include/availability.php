@@ -31,10 +31,11 @@
 
 			if ($success && count($rows) >= 1){
 				$fullness = $rows[0]['fullness'];
-				$lotType = $rows[0]['lotType'];
 
 			}else
 				$fullness = 0;
+
+			echo "<script>console.log(`User type: $userType     Lot type: $lot->lotType`)</script>";
 
 			// display only general lots for general users, all lots for staff users or if user is not logged in
 			if ($lot->lotType == $userType || $userType == 2 || !isset($userType)) {

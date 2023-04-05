@@ -70,11 +70,11 @@
         <p>What type of user are you?</p>
         <div class="user-type-container">
             <label for="user-type">General Parking User: 
-                <input type="radio" name="user-type" value="general" checked>
+                <input type="radio" name="user-type" value="1" checked>
             </label>
 
             <label for="user-type" style="margin-left: 25px;">Staff Parking User: 
-                <input type="radio" name="user-type" value="staff">
+                <input type="radio" name="user-type" value="2">
             </label>
         </div>
         <label for="email">Enter your email: 
