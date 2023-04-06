@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 import os, sys, time
-from sql.database import Database
+from sql import Database
 from avail_calc import getFullness
 
 if __name__ == '__main__':
+	dir = os.path.dirname(os.path.realpath(__file__))
 
 	# Config Setup
-	db_file = 'sql/viewpark.db'
+	db_file = f'{dir}/sql/viewpark.db'
 	init_db = False
 	interval_minutes = 5
 
@@ -66,7 +67,7 @@ if __name__ == '__main__':
 			db.create_availability(aval)
 
 			# Generate JSON lot data
-			with open('www/lots/'+str(aval.lotId), 'w') as file:
+			with open(f'{dir}/www/lots/'+str(aval.lotId), 'w') as file:
 		
 				days = []
 				for day in range(0, 7):
