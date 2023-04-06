@@ -1,20 +1,55 @@
-# ViewPark
+-------------------------------------------------------------------
+VIU Parking Lot Occupancy Tracker (viewpark.ca)
+
+ViewPark is a web-based application that allows users to view the current availability of parking lots at VIU.
+
+ViewPark users can:
+- Create a personal account, and manage account details
+- View current availability of VIU parking lots
+- View a daily 12hr forecast for a given parking lot for any day of the week
+- Create parking sessions
+-------------------------------------------------------------------
+
+Use of the Product
+
+Creating an Account:
+    
+        - Navigate to the website (viewpark.ca)
+        - Scroll down to the "Current Session" section of the page
+        - Click the "Create Account" button
+        - Fill in the necessary information and finalize by hitting "Create Account"
+        - You may now log in and use all ViewPark features 
+
+Manage Account Info:
+
+        - Once logged in, click the "Edit Account" button in the top right of the page
+        - After making changes, click "Update Account" to save the changes
+
+View Current Lot Availability:
+
+        - Current lot availabilities are visible from the main page
+
+View Daily Forecast:
+
+        - This feature requires the user to be logged in
+        - Click on a lot that you wish to view the forecast for
+        - Change the forecast by selecting a day from the dropdown and hit the "Go" button.
+
+Create a Parking Session:
+
+        - This feature requires the user to be logged in
+        - Click on a lot from the main screen that you are parking at
+        - Enter the start and end times of when you will be parked, then hit the "Park Now" button.
 
 
-## Use of the Product
+-------------------------------------------------------------------
+Troubleshooting:
 
-#### Initializing the Database
-
-#### Running the Application
-
+Trouble Shooting 1
 
 
-## Troubleshooting
+-------------------------------------------------------------------
+Known Issues:
 
-#### Trouble Shooting 1
-
-
-
-## Known Issues
-
-#### Issue 1
+Issue 1
+-------------------------------------------------------------------
