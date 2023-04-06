@@ -36,8 +36,104 @@ How To Run:
 -------------------------------------------------------------------
 
 Directory Layout:
-
-// insert tree here 
+.
+├── avail_calc
+│   ├── Availability.py
+│   ├── img
+│   │   ├── lotA
+│   │   │   ├── lotA1.jpg
+│   │   │   ├── lotA2.jpg
+│   │   │   ├── lotA3.jpg
+│   │   │   ├── posList
+│   │   │   └── spot_dimensions.txt
+│   │   ├── lotB
+│   │   │   ├── lotB1.jpg
+│   │   │   ├── lotB2.jpg
+│   │   │   ├── lotB3.jpg
+│   │   │   ├── posList
+│   │   │   └── spot_dimensions.txt
+│   │   ├── lotC
+│   │   │   ├── lotC1.jpg
+│   │   │   ├── lotC2.jpg
+│   │   │   ├── lotC3.jpg
+│   │   │   ├── posList
+│   │   │   └── spot_dimensions.txt
+│   │   ├── lotD
+│   │   │   ├── lotD1.jpg
+│   │   │   ├── lotD2.jpg
+│   │   │   ├── lotD3.jpg
+│   │   │   ├── posList
+│   │   │   └── spot_dimensions.txt
+│   │   ├── lotE
+│   │   │   ├── lotE1.jpg
+│   │   │   ├── lotE2.jpg
+│   │   │   ├── lotE3.jpg
+│   │   │   ├── posList
+│   │   │   └── spot_dimensions.txt
+│   │   └── poslist_generator.py
+│   ├── __init__.py
+│   ├── ParkingLotController.py
+│   ├── ParkingLot.py
+│   ├── ParkingSpot.py
+│   ├── __pycache__
+│   │   ├── Availability.cpython-39.pyc
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── ParkingLotController.cpython-39.pyc
+│   │   ├── ParkingLot.cpython-39.pyc
+│   │   └── ParkingSpot.cpython-39.pyc
+│   └── UnitTests.py
+├── documentation
+│   ├── AnalysisModels.pdf
+│   ├── ProjectPlan.pdf
+│   ├── Requirements.pdf
+│   └── TeamFormation.pdf
+├── install.sh
+├── LICENSE
+├── README.txt
+├── requirements.txt
+├── run.py
+├── sql
+│   ├── create_tables.sql
+│   ├── database.py
+│   ├── data.sql
+│   ├── drop_tables.sql
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── database.cpython-39.pyc
+│   │   ├── __init__.cpython-35.pyc
+│   │   └── __init__.cpython-39.pyc
+│   └── viewpark.db
+├── todo.txt
+└── www
+    ├── account.php
+    ├── create_account.php
+    ├── edit_account.php
+    ├── include
+    │   ├── availability.php
+    │   ├── database.php
+    │   ├── defines.php
+    │   ├── forecast.php
+    │   ├── head.php
+    │   ├── login_modal.php
+    │   ├── logout.php
+    │   ├── park.php
+    │   ├── session.php
+    │   ├── start_session.php
+    │   └── tail.php
+    ├── index.php
+    ├── lots
+    │   ├── 1
+    │   ├── 2
+    │   ├── 3
+    │   ├── 4
+    │   ├── 5
+    │   └── README
+    └── style
+        ├── create_account_style.css
+        ├── img
+        │   └── repeated-square-dark.jpg
+        ├── index_style.css
+        └── style.css
 
 -------------------------------------------------------------------
 
