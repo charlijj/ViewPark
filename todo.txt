@@ -1,0 +1,20 @@
+# ViewPark
+
+
+## Use of the Product
+
+#### Initializing the Database
+
+#### Running the Application
+
+
+
+## Troubleshooting
+
+#### Trouble Shooting 1
+
+
+
+## Known Issues
+
+#### Issue 1
