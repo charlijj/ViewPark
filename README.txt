@@ -40,6 +40,7 @@ Directory Layout:
 ├── install.sh
 ├── LICENSE
 ├── README.txt
+├── todo.txt
 ├── requirements.txt
 ├── run.py
 ├── avail_calc
@@ -94,14 +95,10 @@ Directory Layout:
 │   ├── data.sql
 │   ├── drop_tables.sql
 │   ├── __init__.py
-│   ├── __pycache__
-│   │   ├── database.cpython-39.pyc
-│   │   ├── __init__.cpython-35.pyc
-│   │   └── __init__.cpython-39.pyc
 │   └── viewpark.db
-├── todo.txt
 |
 └── www
+    ├── index.php
     ├── account.php
     ├── create_account.php
     ├── edit_account.php
@@ -117,7 +114,6 @@ Directory Layout:
     │   ├── session.php
     │   ├── start_session.php
     │   └── tail.php
-    ├── index.php
     ├── lots
     │   ├── 1
     │   ├── 2

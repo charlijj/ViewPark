@@ -51,5 +51,11 @@ Trouble Shooting 1
 -------------------------------------------------------------------
 Known Issues:
 
-Issue 1
+Duplicate account issue: 
+The way user log in validation is done is by checking if the username and password combination returns exactly one result
+from the database, however it is possible of a user to create a new account with the same username and password combination as an existing
+user but with a different email. This will cause the login validation to fail. This is a simple fix as we can just make a user enter a unique 
+username as well as email.
+
+
 -------------------------------------------------------------------
