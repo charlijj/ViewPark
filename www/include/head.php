@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/index_style.css">
 	<link rel="stylesheet" href="style/create_account_style.css">
-    <title>View Park</title>
+    <title>ViewPark</title>
 </head>
 
 <body>
 
 <div class="header">
-    <h1>View Park</h1>
+    <h1>ViewPark</h1>
     <h3>Stay informed with real-time VIU parking updates</h3>
 </div>
