@@ -31,7 +31,7 @@
             if (isset($_POST['del_account'])){
                 
                 $query = "DELETE FROM user WHERE username = :username AND password = :password";
-                $params = array("username" => $name, "password" => $currPass);
+                $params = array("username" => $currUser, "password" => $currPass);
                 $db->run($query, $params);
                 unset($_SESSION['USER_ID']);
                 echo "<script>alert(`Account Deleted`);</script>";
@@ -40,35 +40,31 @@
             else if (isset($_POST['password']) && ($pass != $repass)) {
                 echo "<script>alert(`New passwords do not match!`);</script>";
             }
-            else if (isset($_POST['password']) && ($pass == $repass)) {
-
-                $query = "UPDATE user SET password = :newpassword WHERE username = :username AND password = :password";
-                $params = array("newpassword" => $pass, "username" => $currUser, "password" => $currPass);
-                $db->run($query, $params);
-                $updated = "password";
-            }
             else{
+
+                if (isset($_POST['password'])) {
+                    $query = "UPDATE user SET password = :newpassword WHERE username = :username AND password = :password";
+                    $params = array("newpassword" => $pass, "username" => $currUser, "password" => $currPass);
+                    $db->run($query, $params);
+                }
                 
                 if (isset($_POST['user_type'])){
                     $query = "UPDATE user SET userType = :userType WHERE username = :username AND password = :password";
                     $params = array("userType" => $type, "username" => $currUser, "password" => $currPass);
                     $db->run($query, $params);
-                    $updated = $updated . ", user type";
                 }
                 if (isset($_POST['email'])){
                     $query = "UPDATE user SET email = :email WHERE username = :username AND password = :password";
                     $params = array("email" => $email, "username" => $currUser, "password" => $currPass);
                     $db->run($query, $params);
-                    $updated = $updated . ", email";
                 }
                 if (isset($_POST['username'])){
                     $query = "UPDATE user SET username = :newusername WHERE username = :username AND password = :password";
                     $params = array("newusername" => $name, "username" => $currUser, "password" => $currPass);
                     $db->run($query, $params);
-                    $updated = $updated . ", username";
                 }
 
-                echo "<script>alert(`Account updated: $updated has been changed`)</script>";
+                echo "<script>alert(`Account Updated`)</script>";
             }
 
 		} else {
