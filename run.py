@@ -48,7 +48,7 @@ if __name__ == '__main__':
 	
 	if init_db:
 		print('Initializing ' + db_file)
-		db.reset_tables();
+		db.reset_tables()
 
 	if halt_execution:
 		print('Done')
@@ -98,6 +98,9 @@ if __name__ == '__main__':
 				
 				data = '{ "lot": {' + str(days)[1:-2].replace('\'', '') + '} }'	
 
-				file.write(data)			
+				file.write(data)
 
+		print ('\n', '-' * 32, '\n         Interval Started\n', '-' * 32)
 		time.sleep(interval_minutes * 60)
+							
+

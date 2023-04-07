@@ -37,6 +37,11 @@ How To Run:
 
 Directory Layout:
 .
+├── install.sh
+├── LICENSE
+├── README.txt
+├── requirements.txt
+├── run.py
 ├── avail_calc
 │   ├── Availability.py
 │   ├── img
@@ -75,23 +80,14 @@ Directory Layout:
 │   ├── ParkingLotController.py
 │   ├── ParkingLot.py
 │   ├── ParkingSpot.py
-│   ├── __pycache__
-│   │   ├── Availability.cpython-39.pyc
-│   │   ├── __init__.cpython-39.pyc
-│   │   ├── ParkingLotController.cpython-39.pyc
-│   │   ├── ParkingLot.cpython-39.pyc
-│   │   └── ParkingSpot.cpython-39.pyc
 │   └── UnitTests.py
+|
 ├── documentation
 │   ├── AnalysisModels.pdf
 │   ├── ProjectPlan.pdf
 │   ├── Requirements.pdf
 │   └── TeamFormation.pdf
-├── install.sh
-├── LICENSE
-├── README.txt
-├── requirements.txt
-├── run.py
+|
 ├── sql
 │   ├── create_tables.sql
 │   ├── database.py
@@ -104,6 +100,7 @@ Directory Layout:
 │   │   └── __init__.cpython-39.pyc
 │   └── viewpark.db
 ├── todo.txt
+|
 └── www
     ├── account.php
     ├── create_account.php
