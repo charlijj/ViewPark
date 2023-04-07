@@ -19,13 +19,20 @@
 		
 		$db = new Database;
 
-		$hint = new UserEntry;
-		$hint->email = $email;
-		$query = $db->get_users($hint);
+		$emailHint = new UserEntry;
+		$emailHint->email = $email;
+		$query = $db->get_users($emailHint);
+
+		$nameHint = new UserEntry;
+		$nameHint->userName = $name;
+		$query2 = $db->get_users($nameHint);
 
 		if(count($query[1]) > 0){
             echo "<script>alert(`Account already exists with email $email!`)</script>";
 		
+		}elseif(count($query2[1]) > 0){
+            echo "<script>alert(`Account already exists with username $name!`)</script>";
+
 		}elseif($pass != $repass){
             echo "<script>alert(`Passwords do not match!`)</script>";
 	
@@ -47,7 +54,6 @@
 
 			if(count($rows) == 1){
 
-				echo "New account made";
 				echo "<script>alert(`New Account Created, Welcome $name!`)</script>";
 				echo "<script>window.location = `index.php`</script>";
 
@@ -81,7 +87,7 @@
             <input type="email" name="email" required>
         </label>
 
-        <label for="name">Enter your user name: 
+        <label for="name">Enter your username: 
             <input type="text" name="username" required>
         </label>
 

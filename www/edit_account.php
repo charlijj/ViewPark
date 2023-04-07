@@ -12,7 +12,9 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         $currPass = $_POST['curr_password'];
-        $type = $_POST['user-type'];
+        $currUser = $_SESSION['USER_ID'];
+
+        $type = $_POST['user_type'];
         $email = $_POST['email'];
         $name = $_POST['username'];
         $pass = $_POST['password'];
@@ -21,15 +23,16 @@
         $db = new Database;
 		$hint = new UserEntry;
 
-		$hint->userName = $_SESSION['USER_ID'];
+		$hint->userName = $currUser;
 		$hint->password = $currPass;
         
         if(count($db->get_users($hint)[1]) == 1){
 
             if (isset($_POST['del_account'])){
                 
-                //$db->delete_row('user', $hint); // delete current user from database
-
+                $query = "DELETE FROM user WHERE username = :username AND password = :password";
+                $params = array("username" => $name, "password" => $currPass);
+                $db->run($query, $params);
                 unset($_SESSION['USER_ID']);
                 echo "<script>alert(`Account Deleted`);</script>";
                 echo "<script>window.location = `index.php`;</script>";
@@ -37,24 +40,35 @@
             else if (isset($_POST['password']) && ($pass != $repass)) {
                 echo "<script>alert(`New passwords do not match!`);</script>";
             }
-            else{
-                $user = new UserEntry;
+            else if (isset($_POST['password']) && ($pass == $repass)) {
 
-                $user->password = $pass;
+                $query = "UPDATE user SET password = :newpassword WHERE username = :username AND password = :password";
+                $params = array("newpassword" => $pass, "username" => $currUser, "password" => $currPass);
+                $db->run($query, $params);
+                $updated = "password";
+            }
+            else{
                 
-                if (isset($_POST['user-type'])){
-                    $user->userType = $type;
+                if (isset($_POST['user_type'])){
+                    $query = "UPDATE user SET userType = :userType WHERE username = :username AND password = :password";
+                    $params = array("userType" => $type, "username" => $currUser, "password" => $currPass);
+                    $db->run($query, $params);
+                    $updated = $updated . ", user type";
                 }
                 if (isset($_POST['email'])){
-                    $user->userType = $email;
+                    $query = "UPDATE user SET email = :email WHERE username = :username AND password = :password";
+                    $params = array("email" => $email, "username" => $currUser, "password" => $currPass);
+                    $db->run($query, $params);
+                    $updated = $updated . ", email";
                 }
                 if (isset($_POST['username'])){
-                    $user->userType = $name;
+                    $query = "UPDATE user SET username = :newusername WHERE username = :username AND password = :password";
+                    $params = array("newusername" => $name, "username" => $currUser, "password" => $currPass);
+                    $db->run($query, $params);
+                    $updated = $updated . ", username";
                 }
 
-                //$db->update_users($hint, $user) // update the current users data 
-
-                echo "<script>alert(`Account updated`)</script>";
+                echo "<script>alert(`Account updated: $updated has been changed`)</script>";
             }
 
 		} else {
@@ -87,11 +101,11 @@
         <p>Change user type: </p>
         <div class="user-type-container">
             <label for="user-type">General Parking User: 
-                <input type="radio" name="user-type" value="1" checked>
+                <input type="radio" name="user_type" value="1" checked>
             </label>
 
             <label for="user-type" style="margin-left: 25px;">Staff Parking User: 
-                <input type="radio" name="user-type" value="2">
+                <input type="radio" name="user_type" value="2">
             </label>
         </div>
 
