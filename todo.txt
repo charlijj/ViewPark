@@ -1,4 +1,5 @@
 -------------------------------------------------------------------
+
 VIU Parking Lot Occupancy Tracker (viewpark.ca)
 
 ViewPark is a web-based application that allows users to view the current availability of parking lots at VIU.
@@ -45,12 +46,15 @@ Create a Parking Session:
 -------------------------------------------------------------------
 Troubleshooting:
 
-Trouble Shooting 1
+Issue: Unable to find python libraries
 
+This will occur if run.py is executed before running 'pip install -r requirements'
 
 -------------------------------------------------------------------
 Known Issues:
 
-
+The client-side content does not update automatically when the availability is updated on the interval, 
+so the user must manually refresh the page to see the availability changes. This can be fixed by setting an interval in JavaScript to refresh the client,
+an would be something we would implement if we were to continue with this project.
 
 -------------------------------------------------------------------

@@ -12,12 +12,12 @@ By: Team Papaya
 
 Table of contents:
 
-├── How To Run                   line: 31           
+├── How To Run                   line: 30           
 │   ├── Setup                    
 │   └── Run                 
-├── Directory Layout             line: 39
+├── Directory Layout             line: 72
 │  
-└── Key Files                    line: 50
+└── Key Files                    line: 166
     ├── Setup Files:             
     ├── Availability Calculator  
     ├── Account Management       
@@ -29,37 +29,48 @@ Table of contents:
 
 How To Run:
 
+  Dependencies:
+
+    Python 3.9.2 or newer
+    Python libraries: 
+      opencv-contrib-python
+      cvzone
+      pickle-mixin
+
   Setup:
 
-  clone repositorty 
+    clone repository 
 
-  cd into 
-
-  pip install -r requirements.txt
+    pip install -r requirements.txt
 
   Run:
 
-  ./run.py
+    Execute: 
 
-  options:
+    ./run.py
 
-  --help: Print all of the flag options for run.py 
+    options:
 
-  --init-database: Drops all tables if they exist, creates new tables, and populates with test data.
+    --help: Print all of the flag options for run.py 
 
-  --interval <custom_interval>: Specify custom interval in minutes for updating images and availability, the default interval is 5 minutes.
+    --init-database: Drops all tables if they exist, creates new tables, and populates with test data.
 
-  --database <db_file>: Specify custom database path.
+    --interval <custom_interval>: Specify custom interval in minutes for updating images and availability, the default interval is 5 minutes.
 
-  --stop: Stop program after initializing database, does not enter interval loop.
+    --database <db_file>: Specify custom database path.
 
-  Go to website:
+    --stop: Stop program after initializing database, does not enter interval loop.
+
+    Go to ViewPark website:
+
+    http://wwwstu.csci.viu.ca/~csci375b/project/
+
+    (note: page must be refreshed to see updated availability)
 
 -------------------------------------------------------------------
 
 Directory Layout:
 .
-├── install.sh
 ├── LICENSE
 ├── README.txt
 ├── todo.txt
@@ -154,12 +165,11 @@ Directory Layout:
 
 Key Files:
 
-  Setup Files: located in root 
-  │
-  │  - install.sh
+  Setup File: located in root 
   │
   │  - run.py
-  │
+  |    initializes database when run for the first time, starts an interval, and calls availability calculator to update availability for each parking lot on the interval,
+  |    also calculates the availability forecast for each lot and writes it into the corresponding lot JSON file. 
   │
   Availability Calculator: located in avail_calc/ 
   │
@@ -171,7 +181,7 @@ Key Files:
   │    verifies user credentials provided in the login modal and logs user in if valid.
   │
   │  - create_account.php
-  │    allows user to create a new general or staff user, if provided information is valid inserts new account into the database.
+  │    allows user to create a new account, if provided information is valid new account will be inserted into the database.
   │
   │  - edit_account.php
   │    allows user to edit account information or delete account.
@@ -180,27 +190,32 @@ Key Files:
   Session Management: located in www/include/
   │
   │  - park.php
-  │    allows user to create a new session after clicking on a parking lot and selecting a start and end time. 
+  │    allows user to create a new session after clicking on a parking lot, selecting a start and end time, and clicking the park button. 
   │
   │  - session.php 
-  │    displays users current session, showing current users username, the lot they are parking in, and their start and end times.   
+  │    displays users current session, showing current user's username, the lot they are parking in, and their start and end times.   
   │
   │
   Availability View Layer and Forecast: located in www/include/
   │
   │  - availability.php
-  │    displays all parking lots the user can park in, including the lot name, lot ID, and fullness as a % 
+  │    displays all parking lots the user can park in, including the lot name, lot ID, and fullness as a %. The fullness is updated on each interval. 
+  |    also contains the script for generating the forecast bar graph. 
   │
   │  - forecast.php
-  │    displays a bar graph representing the parking lot availability forecast for a selected day. 
+  │    displays a bar graph representing the parking lot availability forecast as well as an option to select a day. 
   │
   │ 
   Database Files: located in sql/
   │
-  │  - database.py
+  │  - database.py and database.php (database.php is located in www/include/)
+  |    initializes the connection to viewpark database and contains data class definitions for each table entry,
+  |    as well as prepared statements for getting, creating, and updating each table.
   │
   │  - create_tables.sql
+  |    contains all table definitions.
   │ 
   │  - data.sql
+  |    contains all test data insert statements. 
 -------------------------------------------------------------------
 
