@@ -24,7 +24,7 @@ if __name__ == '__main__':
 				arg2 = sys.argv[i+1]
 
 			if arg == '--help':
-				print("TODO: Implement help function");
+				print("Options:\n\n--init-database:\nDrops all tables if they exist, creates new tables, and populates with test data.\n\n--interval <custom_interval>:\nSpecify custom interval in minutes for updating images and availability, the default interval is 5 minutes.\n\n--database <db_file>:\nSpecify custom database path.\n\n--stop:\nStop program after initializing database, does not enter interval loop.\n")
 				halt_execution = True
 
 			elif arg == '--init-database':
