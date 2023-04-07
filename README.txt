@@ -31,7 +31,29 @@ How To Run:
 
   Setup:
 
+  clone repositorty 
+
+  cd into 
+
+  pip install -r requirements.txt
+
   Run:
+
+  ./run.py
+
+  options:
+
+  --help: Print all of the flag options for run.py 
+
+  --init-database: Drops all tables if they exist, creates new tables, and populates with test data.
+
+  --interval <custom_interval>: Specify custom interval in minutes for updating images and availability, the default interval is 5 minutes.
+
+  --database <db_file>: Specify custom database path.
+
+  --stop: Stop program after initializing database, does not enter interval loop.
+
+  Go to website:
 
 -------------------------------------------------------------------
 
