@@ -202,6 +202,17 @@ Key Files:
   │    class which unpacks the position list into a list of ParkingSpot objects as input for an Availability instance,
   |    contains method that returns an AvailabilityEntry object to be added to the database.
   |
+  Position List Generator: located in avail_calc/img/
+  |
+  |  - poslist_generator.py
+  |    script that is used to generate the position lists for each lot, these position lists will be used by the system to calculate the fullness of each lot.
+  |    it takes the path to a parking lot image as an argument when ran.
+  |            
+  |        example usage from avail_calc/img: python3 poslist_generator.py lotA/lotA1.jpg
+  |
+  |    when ran a window will open displaying the specified lot image, left clicking on the image will create a spot rectangle whos dimensions will be read from spot_dimensions.txt
+  |    in the same directory. right clicking inside of a rectange will delete it from the list. The posList file is updated after each click.
+  |
   Account Management: located in www/
   │
   │  - account.php
