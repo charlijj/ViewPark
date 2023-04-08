@@ -209,6 +209,7 @@ Key Files:
   |    it takes the path to a parking lot image as an argument when ran.
   |            
   |        example usage from avail_calc/img: python3 poslist_generator.py lotA/lotA1.jpg
+  |        TO CLOSE WINDOW PRESS SPACE BAR
   |
   |    when ran a window will open displaying the specified lot image, left clicking on the image will create a spot rectangle whos dimensions will be read from spot_dimensions.txt
   |    in the same directory. right clicking inside of a rectange will delete it from the list. The posList file is updated after each click.
