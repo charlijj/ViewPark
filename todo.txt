@@ -57,4 +57,8 @@ The client-side content does not update automatically when the availability is u
 so the user must manually refresh the page to see the availability changes. This can be fixed by setting an interval in JavaScript to refresh the client,
 an would be something we would implement if we were to continue with this project.
 
+The image calculation is not accurate 100% of the time, it sometimes reads a shadow or large crack in pavement as a car in a spot.
+While this issue is notable, it is not very consequential to the overall calculation because it is only a very small portion of the spots in each lot that are falsely detected.
+It is better to slightly under-promise and over-deliver than the opposite.
+
 -------------------------------------------------------------------
