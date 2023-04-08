@@ -192,8 +192,16 @@ Key Files:
   │
   Availability Calculator: located in avail_calc/ 
   │
-  │  - 
-  │
+  |  - ParkingSpot.py
+  |    a data class that stores the dimensions of a parking spot as an (x,y) point, width, and height.
+  |
+  │  - Availability.py
+  |    class which contains methods for calculating the fullness of a parking lot from an image and a list of ParkingSpot objects.
+  |
+  |  - ParkingLot.py
+  │    class which unpacks the position list into a list of ParkingSpot objects as input for an Availability instance,
+  |    contains method that returns an AvailabilityEntry object to be added to the database.
+  |
   Account Management: located in www/
   │
   │  - account.php
