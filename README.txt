@@ -21,6 +21,7 @@ Table of contents:
 └── Key Files                    line: 185
     ├── Setup Files:             
     ├── Availability Calculator  
+    ├── Position List Generator
     ├── Account Management       
     ├── Session Management       
     ├── Availability View Layer  
@@ -201,6 +202,9 @@ Key Files:
   |  - ParkingLot.py
   │    class which unpacks the position list into a list of ParkingSpot objects as input for an Availability instance,
   |    contains method that returns an AvailabilityEntry object to be added to the database.
+  |
+  |  - ParkingLotController.py
+  |    responsible for updating the availability for each lot on an interval timer, and entering the availability into the database.
   |
   Position List Generator: located in avail_calc/img/
   |
