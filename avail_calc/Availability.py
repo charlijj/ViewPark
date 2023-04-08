@@ -26,7 +26,7 @@ class Availability:
     def calcFullness(self):
         
         if (len(self.parkingSpotList) == 0):
-            return None
+            return 0
         
         # read the image file, convert it to grayscale, then convert grayscale image to threshold image
         parkingLotImage = cv.imread(self.imagePath)
