@@ -13,11 +13,12 @@ By: Team Papaya
 Table of contents:
 
 ├── How To Run                   line: 30           
-│   ├── Setup                    
+│   ├── Dependencies
+|   ├── Setup                    
 │   └── Run                 
-├── Directory Layout             line: 72
+├── Directory Layout             line: 90
 │  
-└── Key Files                    line: 166
+└── Key Files                    line: 184
     ├── Setup Files:             
     ├── Availability Calculator  
     ├── Account Management       
@@ -46,7 +47,7 @@ How To Run:
   Run:
 
     Execute: 
-
+    
     ./run.py
 
     options:
@@ -63,9 +64,27 @@ How To Run:
 
     Go to ViewPark website:
 
-    http://wwwstu.csci.viu.ca/~csci375b/project/
+    run: ssh -N -L 8080:wwwstu.csci.viu.ca:80 csci375b@csci.viu.ca
+
+    password: Papaya
+
+    in a browser open: http://localhost:8080/~csci375b/project/
 
     (note: page must be refreshed to see updated availability)
+
+    Log In:
+
+    for testing general user:
+
+    username: gentest
+
+    for testing staff user:
+
+    username: stafftest
+
+    password for both: papaya
+
+    or create a new account
 
 -------------------------------------------------------------------
 
