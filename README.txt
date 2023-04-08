@@ -16,9 +16,9 @@ Table of contents:
 │   ├── Dependencies
 |   ├── Setup                    
 │   └── Run                 
-├── Directory Layout             line: 90
+├── Directory Layout             line: 91
 │  
-└── Key Files                    line: 184
+└── Key Files                    line: 185
     ├── Setup Files:             
     ├── Availability Calculator  
     ├── Account Management       
@@ -46,7 +46,7 @@ How To Run:
 
   Run:
 
-    Execute: 
+    Step 1 - Execute: 
     
     ./run.py
 
@@ -62,7 +62,7 @@ How To Run:
 
     --stop: Stop program after initializing database, does not enter interval loop.
 
-    Go to ViewPark website:
+    Step 2 - Go to ViewPark website:
 
     run: ssh -N -L 8080:wwwstu.csci.viu.ca:80 csci375b@csci.viu.ca
 
@@ -72,7 +72,7 @@ How To Run:
 
     (note: page must be refreshed to see updated availability)
 
-    Log In:
+    Step 3 - Log In:
 
     for testing general user:
 
