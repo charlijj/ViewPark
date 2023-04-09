@@ -1,6 +1,6 @@
 -------------------------------------------------------------------
 
-VIU Parking Lot Occupancy Tracker (viewpark.ca)
+VIU Parking Lot Occupancy Tracker (ViewPark)
 
 ViewPark is a web-based application that allows users to view the current availability of parking lots at VIU.
 
@@ -15,7 +15,7 @@ Use of the Product
 
 Creating an Account:
     
-        - Navigate to the website (viewpark.ca)
+        - Navigate to the website (instructions in README.txt)
         - Scroll down to the "Current Session" section of the page
         - Click the "Create Account" button
         - Fill in the necessary information and finalize by hitting "Create Account"
