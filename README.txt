@@ -1,6 +1,6 @@
 -------------------------------------------------------------------
 
-VIU Parking Lot Occupancy Tracker (viewpark.ca)
+VIU Parking Lot Occupancy Tracker (ViewPark)
 
 By: Team Papaya
 
@@ -16,9 +16,9 @@ Table of contents:
 │   ├── Dependencies
 |   ├── Setup                    
 │   └── Run                 
-├── Directory Layout             line: 91
+├── Directory Layout             line: 92
 │  
-└── Key Files                    line: 185
+└── Key Files                    line: 186
     ├── Setup Files:             
     ├── Availability Calculator  
     ├── Position List Generator
@@ -65,7 +65,7 @@ How To Run:
 
     Step 2 - Go to ViewPark website:
 
-    run: ssh -N -L 8080:wwwstu.csci.viu.ca:80 csci375b@csci.viu.ca
+    open a new terminal window and run: ssh -N -L 8080:wwwstu.csci.viu.ca:80 csci375b@csci.viu.ca
 
     password: Papaya
 
