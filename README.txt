@@ -65,11 +65,7 @@ How To Run:
 
     Step 2 - Go to ViewPark website:
 
-    open a new terminal window and run: ssh -N -L 8080:wwwstu.csci.viu.ca:80 csci375b@csci.viu.ca
-
-    password: Papaya
-
-    in a browser open: http://localhost:8080/~csci375b/project/
+    in a browser open: <insert link>
 
     (note: page must be refreshed to see updated availability)
 
